@@ -24,6 +24,7 @@ img {
 
 body {
   color: var(--text);
+  overflow-x: hidden;
 }
 
 a {
@@ -38,7 +39,7 @@ a:hover {
 .inner {
   width: 1340px;
   margin: 0 auto;
-  background: #ff5;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 #header nav {
@@ -46,6 +47,12 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #000;
 }
 
 .gnb {
@@ -60,6 +67,11 @@ a:hover {
   width: 200px;
   text-align: center;
   border: 1px solid #000;
+  font-weight: bold;
+}
+.gnb > li > a:hover {
+  background: var(--main);
+  color: #fff;
 }
 
 .submenu {
@@ -67,6 +79,7 @@ a:hover {
   top: 40px;
   left: 0;
   width: 100%;
+  background: #fff;
 }
 .submenu li a {
   display: block;
@@ -74,8 +87,14 @@ a:hover {
   border: 1px solid #000;
   text-align: center;
 }
+.submenu li a:hover {
+  background: #000;
+  color: #fff;
+}
+
 .visual-slider {
   height: 350px;
+  background: blue;
 }
 .slider-wrap {
   display: flex;
@@ -97,4 +116,101 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.link-list li a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.link-list img {
+  width: 70px;
+  height: 60px;
+}
+
+.banner {
+  height: 200px;
+  background: green;
+}
+
+.board {
+  background: skyblue;
+}
+
+.tab {
+  padding: 30px;
+  width: 50%;
+}
+.tab-menu {
+  display: flex;
+}
+.tab-menu a {
+  display: block;
+  padding: 10px 30px;
+  border: 1px solid #000;
+  background: #bbb;
+}
+.tab-menu a.on {
+  background: #fff;
+  font-weight: bold;
+  color: #000;
+  border-bottom-color: transparent;
+}
+.tab-con {
+  border: 1px solid #000;
+  padding: 20px;
+  background: #fff;
+  margin-top: -1px;
+}
+.tab-con-item {
+  border: 1px solid #f00;
+}
+
+.notice li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  padding: 14px 0;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.gallery li img {
+  width: 140px;
+  height: 140px;
+  border: 1px solid #000;
+}
+
+#footer {
+  height: 120px;
+  background: orange;
+  padding: 20px 0;
+}
+
+#footer .inner {
+  display: flex;
+}
+
+.foot-logo {
+  width: 200px;
+  background: tomato;
+}
+
+.foot-link {
+  display: flex;
+}
+.foot-link li {
+  border-right: 1px solid #000;
+}
+.foot-link li a {
+  padding: 10px 20px;
+}
+
+.foot-con p {
+  padding: 20px;
 }
