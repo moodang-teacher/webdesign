@@ -208,9 +208,19 @@ footer {
   height: 100px;
   background: var(--sub);
   display: flex;
+  padding: 20px;
 }
 
 .foot_logo {
   width: 200px;
   height: 40px;
+}
+
+.foot_menu {
+  display: flex;
+  gap: 20px;
+}
+
+footer p {
+  margin-top: 10px;
 }
