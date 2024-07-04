@@ -1,11 +1,11 @@
 // GNB
 $('.gnb > li').on('mouseenter', function () {
-  $('.nav_bg').stop().slideDown();
-  $('.submenu').stop().fadeIn();
+  $('.nav_bg, .submenu').stop().slideDown();
+  // $('.submenu').stop().fadeIn();
 });
 $('.gnb > li').on('mouseleave', function () {
-  $('.nav_bg').stop().slideUp();
-  $('.submenu').stop().fadeOut();
+  $('.nav_bg, .submenu').stop().slideUp();
+  // $('.submenu').stop().fadeOut();
 });
 
 // 이미지 슬라이드
