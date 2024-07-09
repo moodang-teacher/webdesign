@@ -1,0 +1,294 @@
+@charset 'utf-8';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+	max-width: 100%;
+}
+
+:root {
+	--main: #e31a40;
+	--main_light: #ffc8d2;
+	--main_dark: #3d000b;
+	--sub: rgb(48, 48, 48);
+	--bg: #fff;
+	--bg2: #f5f5f5;
+	--text: #333;
+	--line: rgba(0, 0, 0, 0.5);
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: underline;
+	color: var(--main);
+}
+
+body {
+	background: var(--bg);
+	color: var(--text);
+}
+
+header {
+	width: 1340px;
+	height: 100px;
+	margin: 0 auto;
+	background: var(--bg2);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 190px;
+	height: 44px;
+	border: 1px solid #000;
+}
+
+.gnb {
+	display: flex;
+	align-self: flex-end;
+}
+
+.gnb > li {
+	position: relative;
+}
+
+.gnb > li > a {
+	display: block;
+	padding: 10px 60px;
+	background: var(--main);
+	font-weight: bold;
+	color: #fff;
+	/* border: 1px solid var(--line); */
+}
+.gnb > li > a:hover {
+	background: var(--main_dark);
+}
+
+.submenu {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	padding-top: 20px;
+	display: none;
+}
+
+.submenu li a {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+}
+.submenu li a:hover {
+	background: var(--main_dark);
+}
+
+.gnb_bg {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	background: var(--main);
+	display: none;
+	z-index: 5;
+}
+
+.slider {
+	height: 350px;
+	background: skyblue;
+	overflow: hidden;
+}
+
+.slide_wrap {
+	height: 100%;
+}
+.slide_item {
+	height: 100%;
+	border: 1px solid #000;
+	position: relative;
+}
+.slide_item p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 30px;
+	border-radius: 50px;
+	background: var(--main_dark);
+	font-size: 30px;
+	color: #fff;
+	opacity: 0.7;
+}
+
+.link {
+	/* transform: translateY(-70px); */
+	width: 1340px;
+	margin: 0 auto;
+	margin-top: -70px;
+	background: var(--bg);
+	position: relative;
+	z-index: 10;
+}
+.link_list {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	padding: 20px;
+}
+
+.link_list li a {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.link_list li a img {
+	display: block;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #000;
+}
+
+.banner {
+	width: 1340px;
+	margin: 0 auto;
+	height: 150px;
+	background: tomato;
+}
+
+.board {
+	width: 1340px;
+	height: 250px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.notice {
+	width: 48%;
+	padding: 20px;
+}
+.notice h2 {
+	font-size: 20px;
+	color: #000;
+}
+
+.notice_list {
+	margin-top: 15px;
+}
+.notice_list li a {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 0;
+	border-bottom: 1px solid var(--line);
+}
+
+.gallery {
+	width: 48%;
+	padding: 20px;
+	background: var(--bg2);
+}
+.gallery h2 {
+	font-size: 20px;
+	color: #000;
+}
+
+.gallery_list {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.gallery_list li img {
+	display: block;
+	width: 180px;
+	height: 120px;
+	border: 1px solid #000;
+}
+
+.gallery_list li p {
+	margin-top: 10px;
+}
+
+footer {
+	background: var(--sub);
+	color: #fff;
+	width: 1340px;
+	height: 100px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.foot_logo {
+	width: 190px;
+	height: 44px;
+	border: 1px solid #000;
+}
+
+.family select {
+	display: block;
+	width: 200px;
+	height: 50px;
+	background: var(--sub);
+	color: #fff;
+}
+
+.dim {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	display: none;
+}
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 400px;
+	background: #fff;
+	padding: 30px;
+	border-radius: 20px;
+	border: 2px solid #000;
+	z-index: 100;
+	display: none;
+}
+.popup p {
+	margin-top: 50px;
+	line-height: 1.6;
+}
+.btn_close {
+	margin-top: 50px;
+	margin-left: auto;
+	border: none;
+	display: block;
+	padding: 10px 30px;
+	background: var(--main);
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
