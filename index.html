@@ -5,6 +5,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>웹디자인기능사</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul,
+    ol,
+    li {
+      list-style: none;
+    }
+
+    a,
+    a:hover {
+      text-decoration: none;
+      color: #000;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    article {
+      width: 70%;
+      padding: 5%;
+    }
+
+    article h1 {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      font-size: 7vw;
+      transform: translate(-30%, -50%) rotate(-90deg);
+    }
+
+    article section {
+      margin-top: 2vw;
+    }
+
+    article section h2 {
+      font-size: 2vw;
+    }
+
+    .type-list {
+      margin-top: 10px;
+      display: flex;
+      gap: 1px;
+      height: 3vw;
+    }
+
+    .type-list li {
+      flex: 1 1 24%;
+    }
+
+    .type-list li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      color: #fff;
+      width: 100%;
+      height: 100%;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .type-list li a:hover {
+      background: rgb(0, 76, 181);
+    }
+  </style>
 </head>
 
 <body>
