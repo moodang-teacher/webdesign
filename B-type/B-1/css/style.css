@@ -1,0 +1,71 @@
+@charset 'utf-8';
+
+* {
+  /* m0+p0+bxbb */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,ol,li {
+  list-style: none; /* lisn */
+}
+
+a {
+  text-decoration: none; /* tdn */
+  color: #000; /* c */
+}
+
+a:hover {
+  text-decoration: underline; /* tdu */
+  color: #f39; /* c#f39 */
+}
+
+header {
+  /* h100+bg */
+  height: 100px;
+  background: tomato;
+}
+
+.inner {
+  /* w1200+m0-a */
+  width: 1200px;
+  margin: 0 auto;
+
+  height: 100%;
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  /* w200+h40+bd */
+  width: 200px;
+  height: 40px;
+  border: 1px solid #000;
+}
+
+.gnb {
+  display: flex; 
+}
+
+.gnb li a {
+  padding: 10px 50px; /* p10-50 */
+  border: 1px solid #000; /* bd */
+  display: block; /* db */
+  width: 200px;
+  text-align: center; /* tac: 인라인요소, 텍스트를 가운데로 정렬 */
+  font-weight: bold; /* fwb */
+}
+
+.submenu {
+  display: none; /* dn */
+}
+
+
+footer {
+  height: 100px;
+  background: #222;
+}

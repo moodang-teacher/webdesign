@@ -1,0 +1,265 @@
+@charset 'utf-8';
+
+*{
+  /* m0+p0+bxbb */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,ol,li{
+  /* lisn */
+  list-style: none;
+}
+
+:root{
+  --main: rgb(132, 0, 255);
+  --main_light: rgb(236, 215, 255);
+  --main_dark: rgb(30, 0, 57);
+
+  --sub: #222;
+  --bg: #fff;
+  --bg2: #f5f5f5;
+  --text: #333;
+  --line: rgba(0,0,0,0.5);
+}
+
+a{
+  text-decoration: none; /* tdn */
+  color: #000; /* c */
+}
+a:hover{
+  text-decoration: underline; /* tdu */
+  color: var(--main);
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+}
+
+header{
+  height: 100px;
+  background: var(--bg2);
+}
+
+.inner{
+  /* w1200+h100p+m0-a+bg */
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header .inner{
+  display: flex; /* df */
+  justify-content: space-between; /* jcsb */
+  align-items: flex-end; /* aife */
+
+  position: relative; /* posr : .gnb_bg 절대배치의 기준점 */
+}
+
+.logo{
+  width: 200px;
+  height: 40px;
+  border: 1px solid #000;
+
+  align-self: center; /* as */
+}
+
+.gnb{
+  display: flex;
+}
+
+.gnb > li{
+  position: relative; /* posr : submenu 절대배치의 기준점 역할 */
+}
+
+.gnb > li > a{
+  /* db+p10-50+bd+bg */
+  display: block;
+  padding: 10px 50px;
+  border: 1px solid var(--line);
+  background: var(--main);
+  color: #fff; /* c#fff */
+  font-weight: bold; /* fwb */
+}
+
+.gnb > li > a:hover{
+  background: var(--main_dark);
+}
+
+.submenu{
+  display: none;
+
+  position: absolute; /* posa */
+  top: 43px;
+  left: 0;
+
+  width: 100%; /* w100p */
+  padding: 20px 0; /* p20-0 */
+  z-index: 5; /* z5 */
+}
+
+.submenu li a{
+  display: block;
+  padding: 10px;
+  background: var(--main);
+  color: #fff;
+  text-align: center; /* tac */
+}
+.submenu li a:hover{
+  background: var(--main_dark);
+}
+
+.gnb_bg{
+  position: absolute;
+  /* t100+l0+w100p+h200+bg */
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  background: var(--main);
+  display: none; /* dn */
+}
+
+/* 팝업창 */
+.dim{
+  position: fixed; /* posf */
+  /* t0+l0+w100p+h100p+bg */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--line);
+  z-index: 10; /* z10 */
+
+  /* dn : 스크립트로 만들 동작을 위한 준비 */
+  display: none;
+}
+
+.popup{
+  /* posf+t50p+l50p+trft+w600+h400+bg#fff+p30 */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background: #fff;
+  padding: 30px;
+  z-index: 15;
+
+  /* dn : 스크립트로 만들 동작을 위한 준비 */
+  display: none;
+}
+
+main{
+  /* w1200+m0-a */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.slider {
+  /* h300+bg */
+  height: 300px;
+  background: skyblue;
+
+  overflow: hidden; /* oh: 해당 영역을 넘치는 요소를 숨겨라 */
+}
+
+.slide_item{
+  height: 300px;
+  border: 1px solid #000; /* bd */
+
+  position: relative; /* 아래 절대배치 요소의 기준점 */
+}
+
+.slide_item p {
+  /* posa+t50p+l50p+trft */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: var(--main_dark);
+  /* fz30+fwb+c#fff+bdrs50 */
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 50px;
+  padding: 30px;
+  opacity: 0.7; /* op.7 */
+}
+
+.c_wrap {
+  display: flex; /* df */
+  height: 200px;
+}
+
+.notice{
+  width: 34%;
+  padding: 20px; /* p20 */
+}
+.notice h2{
+  font-size: 20px; /* fz20 */
+}
+
+.notice_list li a{
+  display: flex;
+  justify-content: space-between; /* jcsb */
+  padding: 6px 0; /* p6-0 */
+  border-bottom: 1px solid var(--line); /* bdb */
+}
+
+.gallery{
+  width: 33%;
+  padding: 20px;
+  background: var(--bg2);
+}
+
+.gallery h2{
+  font-size: 20px;
+}
+
+.gallery_list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* mt20 */
+}
+.gallery_list li img{
+  /* db+w100+h100+bd */
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+}
+
+.link{
+  width: 33%;
+  background: tomato;
+}
+
+footer {
+  height: 100px;
+  background: var(--sub);
+  color: #fff; /* c#fff */
+}
+
+footer .inner {
+  display: flex;
+  justify-content: space-between; /* jcsb */
+  align-items: center;
+}
+
+.sns_list{
+  display: flex;
+  gap: 20px;
+}
+
+.sns_list li img {
+  /* db+w50+h50+bd */
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+}

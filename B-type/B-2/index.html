@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대한투어</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <h1 class="logo"><a href="#"><img src="" alt="대한투어"></a></h1>
+      <ul class="gnb">
+        <!-- li*4>a+ul.submenu>li*4>a -->
+        <li>
+          <a href="#">해외여행</a>
+          <ul class="submenu">
+            <li><a href="#">동남아/대만</a></li>
+            <li><a href="#">중국/홍콩</a></li>
+            <li><a href="#">유럽/두바이</a></li>
+            <li><a href="#">미주/하와이</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">국내여행</a>
+          <ul class="submenu">
+            <li><a href="#">서울/경기권</a></li>
+            <li><a href="#">충청권</a></li>
+            <li><a href="#">전라권</a></li>
+            <li><a href="#">경상/강원권</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">제주도</a>
+          <ul class="submenu">
+            <li><a href="#">버스여행</a></li>
+            <li><a href="#">자유여행</a></li>
+            <li><a href="#">호텔/펜션</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">렌터카</a>
+          <ul class="submenu">
+            <li><a href="#">국내 렌터카</a></li>
+            <li><a href="#">국외 렌터카</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- 서브 메뉴의 배경 -->
+      <div class="gnb_bg"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- .slider+.c_wrap -->
+
+    <div class="slider">
+      <!-- .slide_wrap>.slide_item*3>img+p -->
+      
+      <div class="slide_wrap">
+        <div class="slide_item">
+          <img src="" alt="대한투어 이미지슬라이드1">
+          <p>대한투어 이미지슬라이드1</p>
+        </div>
+
+        <div class="slide_item">
+          <img src="" alt="대한투어 이미지슬라이드2">
+          <p>대한투어 이미지슬라이드2</p>
+        </div>
+
+        <div class="slide_item">
+          <img src="" alt="대한투어 이미지슬라이드3">
+          <p>대한투어 이미지슬라이드3</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="c_wrap">
+      <!-- 공지사항 -->
+      <div class="notice">
+        <h2>공지사항</h2>
+        <!-- ul.notice_list>li*4>a>p*2 -->
+        <ul class="notice_list">
+          <li>
+            <a href="#" class="open_popup">
+              <p>대한투어 공지사항1</p>
+              <p>2020.11.24</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>대한투어 공지사항2</p>
+              <p>2020.11.24</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>대한투어 공지사항3</p>
+              <p>2020.11.24</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>대한투어 공지사항4</p>
+              <p>2020.11.24</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 갤러리 -->
+      <div class="gallery">
+        <!-- h2+ul.gallery_list>li*3>a>img -->
+        <h2>갤러리</h2>
+        <ul class="gallery_list">
+          <li><a href="#"><img src="" alt="이미지1"></a></li>
+          <li><a href="#"><img src="" alt="이미지2"></a></li>
+          <li><a href="#"><img src="" alt="이미지3"></a></li>
+        </ul>
+      </div>
+
+      <!-- 바로가기 -->
+      <div class="link">
+        <a href="#"><img src="" alt="바로가기"></a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <!-- p.copyright+.foot_con>ul.sns_list+.family -->
+      <p class="copyright">COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED</p>
+      
+      <div class="foot_con">
+        <ul class="sns_list">
+          <!-- li*3>a>img -->
+          <li><a href="#"><img src="" alt="페이스북"></a></li>
+          <li><a href="#"><img src="" alt="트위터"></a></li>
+          <li><a href="#"><img src="" alt="인스타그램"></a></li>
+        </ul>
+
+        <div class="family">
+          <!-- select>opt*4 -->
+          <select>
+            <option value="#">패밀리 사이트1</option>
+            <option value="#">패밀리 사이트2</option>
+            <option value="#">패밀리 사이트3</option>
+            <option value="#">패밀리 사이트4</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 팝업창 -->
+  <!-- .dim+.popup>h2+p+button.btn_close -->
+  <div class="dim"></div>
+
+  <div class="popup">
+    <h2>대한투어 공지사항</h2>
+    <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세.
+      무궁화 삼천리 화려강 대한 사람 대한으로 길이 보전하세.
+      남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세.</p>
+    <button class="btn_close">닫기</button>
+  </div>
+</body>
+</html>
