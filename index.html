@@ -147,6 +147,16 @@
 
 
   </article>
+
+  <script>
+    const aEl = document.querySelectorAll('.type-list li a');
+
+    aEl.forEach(a => {
+      if (!(a.getAttribute('href'))) {
+        a.style.backgroundColor = '#555';
+      }
+    })
+  </script>
 </body>
 
 </html>
