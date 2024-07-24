@@ -1,10 +1,17 @@
 // GNB
+// $('.gnb > li').on('mouseenter', function () {
+// 	$('.submenu, .gnb_bg').stop().show();
+// 	$('.submenu').css('display', 'flex');
+// });
+// $('.gnb > li').on('mouseleave', function () {
+// 	$('.submenu, .gnb_bg').stop().hide();
+// });
+
 $('.gnb > li').on('mouseenter', function () {
-	$('.submenu, .gnb_bg').stop().show();
-	$('.submenu').css('display', 'flex');
+	$('.submenu, .gnb_bg').stop().slideDown();
 });
 $('.gnb > li').on('mouseleave', function () {
-	$('.submenu, .gnb_bg').stop().hide();
+	$('.submenu, .gnb_bg').stop().slideUp();
 });
 
 // 이미지 슬라이드 : fade In/Out

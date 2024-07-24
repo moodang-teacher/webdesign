@@ -89,8 +89,14 @@ header {
 	top: 0;
 	left: 200px;
 	/* background: #ff5; */
-	display: flex;
+	/* display: flex; */
 	display: none;
+	width: 1000px;
+	border: 1px solid #000;
+}
+
+.submenu li {
+	display: inline-block; /* 이걸로 푸는게 좋을듯! */
 }
 
 .submenu li a {
