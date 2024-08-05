@@ -89,8 +89,9 @@ header {
   left: 0;
   width: 100%; /* w100p */
   border: 1px solid var(--line);
+  z-index: 5;
 
-  display: none; /* dn */
+  display: none;
 }
 
 .submenu li a {
@@ -153,6 +154,10 @@ header {
   padding: 20px;
   margin: 0 auto;
   background: #5f5;
+
+  margin-top: -80px;
+  position: relative;
+  z-index: 5;
 }
 
 .link_list {
@@ -177,4 +182,142 @@ header {
   /* fwb+fz14 */
   font-weight: bold;
   font-size: 14px;
+}
+
+.banner {
+  /* w1340+m0-a */
+  width: 1340px;
+  margin: 0 auto;
+  height: 200px;
+  background: tomato;
+}
+
+.board {
+  /* w1340+h400+m0-a */
+  width: 1340px;
+  height: 250px;
+  margin: 0 auto;
+
+  display: flex;
+}
+
+.notice {
+  width: 50%; /* w50p */
+  padding: 30px;
+}
+
+.notice_list {
+  margin-top: 20px;
+}
+
+.notice_list li a {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.gallery {
+  width: 50%;
+  padding: 30px;
+  background: var(--bg2);
+}
+
+.gallery_list {
+  display: flex;
+  justify-content: center; /* jcc */
+  gap: 20px; /* g20 */
+  margin-top: 15px;
+}
+
+.gallery_list li img {
+  display: block;
+  width: 180px;
+  height: 120px;
+  border: 1px solid #000;
+}
+
+.gallery_list li p {
+  margin-top: 5px;
+}
+
+footer {
+  /* w1340+h120+m0-a+bg+c#fff+p10 */
+  width: 1340px;
+  height: 120px;
+  margin: 0 auto;
+  background: var(--sub);
+  color: #fff;
+  padding: 0 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sns_list {
+  display: flex;
+  gap: 20px;
+}
+
+.sns_list li img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+}
+
+.family select {
+  display: block;
+  margin-top: 5px;
+  width: 160px;
+  padding: 5px;
+}
+
+.dim {
+  /* posf+t0+l0+w100p+h100p+bg */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--line);
+
+  display: none;
+  z-index: 10;
+}
+
+.popup {
+  display: none;
+  z-index: 11;
+
+  /* posf+t50p+l50p+trft */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* w600+h400+bd+p30+bg#fff+bdrs20 */
+  width: 600px;
+  height: 400px;
+  border: 2px solid #000;
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.popup p {
+  margin-top: 40px;
+  line-height: 1.6;
+}
+
+.btn_close {
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  border: none;
+  background: var(--main);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
