@@ -1,0 +1,311 @@
+@charset 'utf-8';
+
+*{
+  /* m0+p0+bxbb */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,ol,li{
+  list-style: none; /* lisn */
+}
+
+:root {
+  --main: #0a9b97;
+  --main_light: #e1fffe;
+  --main_dark: #004442;
+  --sub: #f04467;
+  --bg: #fff;
+  --bg2: #f5f5f5;
+  --text: #666;
+  --line: rgba(0,0,0,0.4);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--main);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.inner {
+  /* w1340+m0-a+bg#ff5 */
+  width: 1340px;
+  margin: 0 auto;
+  /* background: #ff5; */
+
+  height: 100%; /* h100p */
+}
+
+header {
+  height: 100px;
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  /* w200+h50+bd */
+  width: 200px;
+  height: 50px;
+  border: 1px solid #000;
+}
+
+.gnb {
+  display: flex;
+
+  align-self: flex-end; /* as */
+}
+.gnb > li > a{
+  display: block;
+  padding: 13px;
+  background: var(--main);
+  color: #fff;
+  font-weight: bold; /* fwb */
+  border: 1px solid var(--line);
+
+  width: 200px;
+  text-align: center; /* tac */
+}
+
+.gnb > li {
+  position: relative; /* posr: 직계 자손의 절대배치 기준점 */
+}
+
+.gnb > li > a:hover {
+  background: var(--main_dark);
+}
+
+.submenu {
+  display: none;
+
+  /* posa+t0+l0 */
+  position: absolute;
+  top: 49px;
+  left: 0;
+  z-index: 5; /* z5 */
+
+  width: 100%;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px;
+  text-align: center; /* tac */
+}
+.submenu li a:hover {
+  background: var(--main_light);
+}
+
+.gnb_bg {
+  /* posa+t100+l0+w100p+h200+bg */
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 180px;
+  background: var(--main);
+
+  display: none;
+}
+
+.slider {
+  height: 350px;
+  background: skyblue;
+}
+
+.slide_wrap {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #f00;
+
+  display: flex;
+}
+.slide_item {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0; /* fxsh0 */
+  border: 1px solid #000;
+  background: red;
+
+  position: relative;
+}
+.slide_item p {
+  /* posa+t50p+l50p+trft */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* p40+bg+bdrs50+fz30+c#fff+op.7 */
+  padding: 40px;
+  background: #000;
+  border-radius: 50px;
+  font-size: 30px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.link {
+  margin-top: -70px;
+  z-index: 100;
+  position: relative; /* 위치 변화없이 z-index를 가져야 할 때 */
+}
+
+.link .inner {
+  padding: 20px;
+  background: #fff;
+}
+
+.link_list {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.link_list li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.link_list li a img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+}
+.link_list li a p {
+  font-weight: bold; /* fwb */
+}
+
+.banner {
+  height: 200px;
+  background: tomato;
+}
+
+
+.board {
+  border: 1px solid #000;
+}
+
+.board .inner {
+  padding: 30px;
+}
+
+.tab {
+  width: 50%;
+  border: 1px solid #000;
+}
+
+.tab_menu {
+  display: flex;
+  gap: 10px;
+}
+
+.tab_menu a {
+  display: block;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  border: 1px solid var(--line);
+  border-radius: 5px; /* bdrs5 */
+}
+
+.tab_menu a.on {
+  background: var(--main);
+  font-weight: bold; /* fwb */
+  color: #fff;
+}
+
+.tab_con {
+  border: 1px solid #f00;
+  padding: 20px;
+}
+
+.notice_list li a{
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.gallery_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery_list li img {
+  display: block;
+  width: 180px;
+  height: 120px;
+  border: 1px solid #000;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  height: 120px;
+}
+
+footer .inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.foot_logo {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #fff;
+}
+
+.foot_con {
+  /* background: #5f5; */
+  flex-grow: 1; /* fxg1: 공간이 남으면 늘어나라 */
+}
+
+.foot_menu {
+  display: flex;
+  gap: 20px;
+}
+
+.foot_menu li a {
+  color: #fff;
+}
+
+.copyright {
+  margin-top: 15px;
+}
+
+.popup {
+  /* posf+t50p+l50p+trft */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+
+  transform: translate(-50%, -50%);
+
+  /* w600+h400+bg#fff+bdrs20+bd+p30 */
+  width: 600px;
+  height: 400px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #000;
+  padding: 30px;
+
+  display: none;  
+}
