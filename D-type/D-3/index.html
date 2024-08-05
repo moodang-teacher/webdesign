@@ -1,180 +1,222 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>푸른마을</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>푸른마을</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- .wrap+footer -->
+    <div class="wrap">
+      <!-- header+main -->
+      <header>
+        <!-- h1.logo>a>img -->
+        <h1 class="logo">
+          <a href="#"><img src="./images/logo.png" alt="푸른마을" /></a>
+        </h1>
 
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
-  <div class="wrap">
-    <header>
-      <h1 class="logo"><a href="#"><img src="" alt="푸른마을"></a></h1>
-      <ul class="gnb">
-        <li>
-          <a href="#">OnSale</a>
-          <ul class="submenu">
-            <li><a href="#">할인행사</a></li>
-            <li><a href="#">덤증정</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">기획전</a>
-          <ul class="submenu">
-            <li><a href="#">봄 먹거리</a></li>
-            <li><a href="#">여름 먹거리</a></li>
-            <li><a href="#">가을 먹거리</a></li>
-            <li><a href="#">겨울 먹거리</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">푸른마을 레시피</a>
-          <ul class="submenu">
-            <li><a href="#">메인요리</a></li>
-            <li><a href="#">밑반찬</a></li>
-            <li><a href="#">간식</a></li>
-            <li><a href="#">브런치</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">매장안내</a>
-          <ul class="submenu">
-            <li><a href="#">신규매장</a></li>
-            <li><a href="#">추천매장</a></li>
-            <li><a href="#">공지사항</a></li>
-          </ul>
-        </li>
-      </ul>
-
-      <ul class="spotmenu">
-        <li><a href="#">spotmenu1</a></li>
-        <li><a href="#">spotmenu2</a></li>
-      </ul>
-
-    </header>
-    <div class="gnb_bg"></div>
-
-    <main>
-
-      <div class="slider">
-        <div class="slide_wrap">
-          <div class="slide_item">
-            <img src="" alt="신선한 유기농 식재료">
-            <p>신선한 유기농 식재료</p>
-          </div>
-          <div class="slide_item">
-            <img src="" alt="빠른 친환경 배송">
-            <p>빠른 친환경 배송</p>
-          </div>
-          <div class="slide_item">
-            <img src="" alt="편리한 온라인 쇼핑">
-            <p>편리한 온라인 쇼핑</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="link">
-        <ul class="link_list">
+        <!-- ul.gnb>li*4>a+ul.submenu>li*4>a -->
+        <ul class="gnb">
           <li>
-            <a href="#">
-              <img src="" alt="link1">
-              <p>LINK1</p>
-            </a>
+            <a href="#">OnSale</a>
+            <ul class="submenu">
+              <li><a href="#">할인행사</a></li>
+              <li><a href="#">덤증정</a></li>
+            </ul>
           </li>
           <li>
-            <a href="#">
-              <img src="" alt="link2">
-              <p>LINK2</p>
-            </a>
+            <a href="#">기획전</a>
+            <ul class="submenu">
+              <li><a href="#">봄 먹거리</a></li>
+              <li><a href="#">여름 먹거리</a></li>
+              <li><a href="#">가을 먹거리</a></li>
+              <li><a href="#">겨울 먹거리</a></li>
+            </ul>
           </li>
           <li>
-            <a href="#">
-              <img src="" alt="link3">
-              <p>LINK3</p>
-            </a>
+            <a href="#">푸른마을 레시피</a>
+            <ul class="submenu">
+              <li><a href="#">메인요리</a></li>
+              <li><a href="#">밑반찬</a></li>
+              <li><a href="#">간식</a></li>
+              <li><a href="#">브런치</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">매장안내</a>
+            <ul class="submenu">
+              <li><a href="#">신규매장</a></li>
+              <li><a href="#">추천매장</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
           </li>
         </ul>
-      </div>
 
-      <div class="banner"><a href="#"><img src="" alt="banner"></a></div>
+        <!-- ul.spotmenu>li*2>a -->
+        <ul class="spotmenu">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+        </ul>
 
-      <div class="board">
-        <div class="tab">
-          <div class="tab_menu">
-            <a href="#" class="on">공지사항</a>
-            <a href="#">갤러리</a>
-          </div>
-          <div class="tab_con">
-            <div class="tab_con_item">
-              <ul class="notice_list">
-                <li>
-                  <a href="#" class="open_popup">
-                    <p>신규 상품 입고 안내</p>
-                    <p>2024. 07.09</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <p>배송 정책 변경 안내</p>
-                    <p>2024. 07.09</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <p>회원 전용 할인 이벤트</p>
-                    <p>2024. 07.09</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <p>친환경 포장 안내</p>
-                    <p>2024. 07.09</p>
-                  </a>
-                </li>
-              </ul>
+        <!-- GNB 배경 -->
+        <div class="gnb_bg"></div>
+      </header>
+      <main>
+        <!-- .slider+.link+.banner+.board -->
+        <div class="slider">
+          <!-- .slide_wrap>.slide_item*3>img+p -->
+          <div class="slide_wrap">
+            <div class="slide_item">
+              <img src="./images/pic1.jpg" alt="푸른마을에서 친환경 생활을 실천하세요." />
+              <p>푸른마을에서 친환경 생활을 실천하세요.</p>
             </div>
-            <div class="tab_con_item">
-              <ul class="gallery_list">
-                <li><a href="#"><img src="" alt="신선한 유기농 과일"></a></li>
-                <li><a href="#"><img src="" alt="친환경 채소 모음"></a></li>
-                <li><a href="#"><img src="" alt="유기농 유제품"></a></li>
-              </ul>
+            <div class="slide_item">
+              <img src="./images/pic2.jpg" alt="푸른마을의 지속 가능한 삶을 경험하세요." />
+              <p>푸른마을의 지속 가능한 삶을 경험하세요.</p>
+            </div>
+            <div class="slide_item">
+              <img src="./images/pic3.jpg" alt="푸른마을에서 자연과 함께하는 삶을 누리세요." />
+              <p>푸른마을에서 자연과 함께하는 삶을 누리세요.</p>
             </div>
           </div>
         </div>
-      </div>
-    </main>
-  </div>
 
-  <footer>
-    <div class="foot_logo"><a href="#"><img src="" alt="푸른마을"></a></div>
-    <div class="foot_con">
-      <ul class="foot_menu">
-        <li><a href="#">foot menu1</a></li>
-        <li><a href="#">foot menu2</a></li>
-        <li><a href="#">foot menu3</a></li>
-        <li><a href="#">foot menu4</a></li>
-        <li><a href="#">foot menu5</a></li>
-        <li><a href="#">foot menu6</a></li>
-      </ul>
-      <p class="copyright">© 2024 The Bluemarket. All rights reserved.</p>
+        <div class="link">
+          <!-- ul.link_list>li*3>a>img+p -->
+          <ul class="link_list">
+            <li>
+              <a href="#">
+                <img src="./images/link1.jpg" alt="LINK1" />
+                <p>LINK1</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/link2.jpg" alt="LINK2" />
+                <p>LINK2</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/link3.jpg" alt="LINK3" />
+                <p>LINK3</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="banner">
+          <a href="#"><img src="./images/banner.jpg" alt="지속 가능한 삶을 경험하세요" /></a>
+        </div>
+
+        <div class="board">
+          <!-- .tab>.tab_menu+.tab_con -->
+          <div class="tab">
+            <div class="tab_menu">
+              <a href="https://www.naver.com" class="on">공지사항</a>
+              <a href="#">갤러리</a>
+            </div>
+
+            <div class="tab_con">
+              <!-- .tab_con_item*2 -->
+              <div class="tab_con_item">
+                <!-- 공지사항 -->
+                <!-- ul.notice_list>li*4>a>p*2 -->
+                <ul class="notice_list">
+                  <li>
+                    <a href="#" class="open_popup">
+                      <p>푸른마을에서는 친환경 캠페인을 시작합니다.</p>
+                      <p>2024. 07. 19</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>웹사이트 이용에 대한 규정과 조건을 안내합니다.</p>
+                      <p>2024. 07. 19</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>
+                        방문객들이 질문이나 요청을 할 수 있는 연락처 정보를
+                        제공합니다.
+                      </p>
+                      <p>2024. 07. 19</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>
+                        마을에서 진행하는 다양한 환경 보호 활동을 소개합니다.
+                      </p>
+                      <p>2024. 07. 19</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab_con_item">
+                <!-- 갤러리 -->
+                <!-- ul.gallery_list>li*3>a>img -->
+                <ul class="gallery_list">
+                  <li>
+                    <a href="#"><img src="./images/gallery1.jpg" alt="신선한 유기농 과일" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./images/gallery2.jpg" alt="친환경 채소 모음" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./images/gallery3.jpg" alt="유기농 유제품" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-  </footer>
 
-  <div class="popup">
-    <h2>신규 상품 입고 안내</h2>
-    <p>
-      푸른마을에 새로운 유기농 식재료가 입고되었습니다! 신선한 과일, 채소, 유제품 등 다양한 상품을 만나보세요. 모든 상품은 엄격한 품질 관리를 거쳐 제공되며, 빠른 배송으로 신선함을 유지합니다. 자세한
-      정보는 홈페이지에서 확인해 주세요.
-    </p>
-    <button class="btn_close">닫기</button>
-  </div>
+    <footer>
+      <!-- .foot_logo+.foot_con -->
+      <div class="foot_logo">
+        <a href="#"><img src="./images/foot_logo.png" alt="푸른마을" /></a>
+      </div>
 
-  <script src="./script/jquery-1.12.3.js"></script>
-  <script src="./script/script.js"></script>
-</body>
+      <div class="foot_con">
+        <!-- ul.foot_menu>li*6>a -->
+        <ul class="foot_menu">
+          <li><a href="#">이용 약관</a></li>
+          <li><a href="#">개인정보 처리방침</a></li>
+          <li><a href="#">문의하기</a></li>
+          <li><a href="#">자주 묻는 질문</a></li>
+          <li><a href="#">환경 보호 활동</a></li>
+          <li><a href="#">커뮤니티 소식</a></li>
+        </ul>
 
+        <p class="copyright">COPYRIGHT © 2024 푸른마을</p>
+      </div>
+    </footer>
+
+    <!-- .popup>h2+p+button.btn_close{닫기} -->
+    <div class="popup">
+      <h2>푸른마을에서는 친환경 캠페인을 시작합니다.</h2>
+      <p>
+        이번 캠페인은 마을 주민 모두가 참여하여 환경 보호 활동을 진행하는 것을
+        목표로 하고 있습니다. 주민들은 쓰레기 분리수거, 재활용, 에너지 절약 등
+        다양한 활동에 참여하게 됩니다. 또한, 마을 곳곳에서 환경 보호를 주제로 한
+        워크숍과 세미나도 열릴 예정입니다. 캠페인 기간 동안 주민들이 함께 모여
+        환경 문제에 대해 논의하고, 실질적인 해결 방안을 모색하는 시간을 가질
+        것입니다. 자세한 내용과 참여 방법은 마을회관에서 확인할 수 있습니다.
+        많은 관심과 참여 부탁드리며, 함께 푸른마을을 더욱 아름답고 깨끗하게
+        만들어 보아요!
+      </p>
+      <button class="btn_close">닫기</button>
+    </div>
+
+
+    <script src="./script/jquery-1.12.3.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
