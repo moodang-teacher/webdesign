@@ -1,21 +1,25 @@
 // GNB
 $('.gnb > li').on('mouseenter', function () {
-  $(this).find('.submenu').fadeIn();
+  $('.gnb_bg, .submenu').stop().slideDown();
+  // $('.submenu').stop().fadeIn();
 });
 $('.gnb > li').on('mouseleave', function () {
-  $(this).find('.submenu').fadeOut();
+  $('.gnb_bg, .submenu').stop().slideUp();
+  // $('.submenu').stop().fadeOut();
 });
 
-// slide
+// 상하 슬라이드
+// setInterval(function () {}, 3000)
 setInterval(function () {
+  // $('.slide_wrap').animate({}, 1000, function () {})
   $('.slide_wrap').animate(
     {
-      'margin-left': '-100%',
+      'margin-top': '-300px',
     },
-    700,
+    1000,
     function () {
       $('.slide_item:first').appendTo('.slide_wrap');
-      $('.slide_wrap').css('margin-left', 0);
+      $('.slide_wrap').css('margin-top', '0');
     }
   );
 }, 3000);

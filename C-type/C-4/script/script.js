@@ -1,12 +1,12 @@
 // GNB
 $('.gnb > li').on('mouseenter', function () {
-  $(this).find('.submenu').fadeIn();
+  $(this).find('.submenu').stop().fadeIn();
 });
 $('.gnb > li').on('mouseleave', function () {
-  $(this).find('.submenu').fadeOut();
+  $(this).find('.submenu').stop().fadeOut();
 });
 
-// slide
+// slider left/right
 setInterval(function () {
   $('.slide_wrap').animate(
     {
@@ -21,9 +21,9 @@ setInterval(function () {
 }, 3000);
 
 // popup
-$('.open_popup').on('click', function () {
-  $('.dim').fadeIn();
-  $('.popup').fadeIn();
+$('.open_popup').on('click', function (e) {
+  e.preventDefault();
+  $('.dim, .popup').fadeIn();
 });
 
 $('.btn_close').on('click', function () {
