@@ -1,158 +1,160 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>웹디자인기능사</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>웹디자인기능사</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul,
+    ol,
+    li {
+      list-style: none;
+    }
+
+    a,
+    a:hover {
+      text-decoration: none;
+      color: #000;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    article {
+      width: 70%;
+      padding: 5%;
+    }
+
+    article h1 {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      font-size: 7vw;
+      transform: translate(-30%, -50%) rotate(-90deg);
+    }
+
+    article section {
+      margin-top: 2vw;
+    }
+
+    article section h2 {
+      font-size: 2vw;
+    }
+
+    .type-list {
+      margin-top: 10px;
+      display: flex;
+      gap: 1px;
+      height: 3vw;
+    }
+
+    .type-list li {
+      flex: 1 1 24%;
+    }
+
+    .type-list li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      color: #fff;
+      width: 100%;
+      height: 100%;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .type-list li a:hover {
+      background: rgb(0, 76, 181);
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <h1>웹디자인기능사</h1>
+
+    <section class="sec1">
+      <h2>A type</h2>
+      <ul class="type-list">
+        <li><a href="./A-type/A-1/index.html" target="_blank">A-1</a></li>
+        <li><a href="./A-type/A-2/index.html" target="_blank">A-2</a></li>
+        <li><a href="./A-type/A-3/index.html" target="_blank">A-3</a></li>
+        <li><a href="" target="_blank">A-4</a></li>
+      </ul>
+    </section>
+
+    <section class="sec2">
+      <h2>B type</h2>
+      <ul class="type-list">
+        <li><a href="./B-type/B-1/index.html" target="_blank">B-1</a></li>
+        <li><a href="./B-type/B-2/index.html" target="_blank">B-2</a></li>
+        <li><a href="./B-type/B-3/index.html" target="_blank">B-3</a></li>
+        <li><a href="./B-type/B-4/index.html" target="_blank">B-4</a></li>
+      </ul>
+    </section>
+
+    <section class="sec3">
+      <h2>C type</h2>
+      <ul class="type-list">
+        <li><a href="./C-type/C-1/index.html" target="_blank">C-1</a></li>
+        <li><a href="./C-type/C-2/index.html" target="_blank">C-2</a></li>
+        <li><a href="./C-type/C-3/index.html" target="_blank">C-3</a></li>
+        <li><a href="./C-type/C-4/index.html" target="_blank">C-4</a></li>
+      </ul>
+    </section>
+
+    <section class="sec6">
+      <h2>D type</h2>
+      <ul class="type-list">
+        <li><a href="./D-type/D-1/index.html" target="_blank">D-1</a></li>
+        <li><a href="./D-type/D-2/index.html" target="_blank">D-2</a></li>
+        <li><a href="./D-type/D-3/index.html" target="_blank">D-3</a></li>
+        <li><a href="./D-type/D-4/index.html" target="_blank">D-4</a></li>
+      </ul>
+    </section>
+
+    <section class="sec4">
+      <h2>E type</h2>
+      <ul class="type-list">
+        <li><a href="./E-type/E-1/index.html" target="_blank">E-1</a></li>
+        <li><a href="./E-type/E-2/index.html" target="_blank">E-2</a></li>
+        <li><a href="./E-type/E-3/index.html" target="_blank">E-3</a></li>
+        <li><a href="./E-type/E-4/index.html" target="_blank">E-4</a></li>
+      </ul>
+    </section>
+
+    <section class="sec5">
+      <h2>F type</h2>
+      <ul class="type-list">
+        <li><a href="./F-type/F-1/index.html" target="_blank">F-1</a></li>
+        <li><a href="./F-type/F-2/index.html" target="_blank">F-2</a></li>
+        <li><a href="./F-type/F-3/index.html" target="_blank">F-3</a></li>
+        <li><a href="./F-type/F-4/index.html" target="_blank">F-4</a></li>
+      </ul>
+    </section>
+  </article>
+
+  <script>
+    const aEl = document.querySelectorAll('.type-list li a');
+
+    aEl.forEach((a) => {
+      if (!a.getAttribute('href')) {
+        a.style.backgroundColor = '#555';
       }
+    });
+  </script>
+</body>
 
-      ul,
-      ol,
-      li {
-        list-style: none;
-      }
-
-      a,
-      a:hover {
-        text-decoration: none;
-        color: #000;
-      }
-
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-
-      article {
-        width: 70%;
-        padding: 5%;
-      }
-
-      article h1 {
-        position: fixed;
-        top: 50%;
-        left: 0;
-        font-size: 7vw;
-        transform: translate(-30%, -50%) rotate(-90deg);
-      }
-
-      article section {
-        margin-top: 2vw;
-      }
-
-      article section h2 {
-        font-size: 2vw;
-      }
-
-      .type-list {
-        margin-top: 10px;
-        display: flex;
-        gap: 1px;
-        height: 3vw;
-      }
-
-      .type-list li {
-        flex: 1 1 24%;
-      }
-
-      .type-list li a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #000;
-        color: #fff;
-        width: 100%;
-        height: 100%;
-        font-weight: bold;
-        font-size: 20px;
-      }
-
-      .type-list li a:hover {
-        background: rgb(0, 76, 181);
-      }
-    </style>
-  </head>
-
-  <body>
-    <article>
-      <h1>웹디자인기능사</h1>
-
-      <section class="sec1">
-        <h2>A type</h2>
-        <ul class="type-list">
-          <li><a href="./A-type/A-1/index.html" target="_blank">A-1</a></li>
-          <li><a href="./A-type/A-2/index.html" target="_blank">A-2</a></li>
-          <li><a href="./A-type/A-3/index.html" target="_blank">A-3</a></li>
-          <li><a href="" target="_blank">A-4</a></li>
-        </ul>
-      </section>
-
-      <section class="sec2">
-        <h2>B type</h2>
-        <ul class="type-list">
-          <li><a href="./B-type/B-1/index.html" target="_blank">B-1</a></li>
-          <li><a href="./B-type/B-2/index.html" target="_blank">B-2</a></li>
-          <li><a href="./B-type/B-3/index.html" target="_blank">B-3</a></li>
-          <li><a href="./B-type/B-4/index.html" target="_blank">B-4</a></li>
-        </ul>
-      </section>
-
-      <section class="sec3">
-        <h2>C type</h2>
-        <ul class="type-list">
-          <li><a href="./C-type/C-1/index.html" target="_blank">C-1</a></li>
-          <li><a href="./C-type/C-2/index.html" target="_blank">C-2</a></li>
-          <li><a href="./C-type/C-3/index.html" target="_blank">C-3</a></li>
-          <li><a href="./C-type/C-4/index.html" target="_blank">C-4</a></li>
-        </ul>
-      </section>
-
-      <section class="sec6">
-        <h2>D type</h2>
-        <ul class="type-list">
-          <li><a href="./D-type/D-1/index.html" target="_blank">D-1</a></li>
-          <li><a href="./D-type/D-2/index.html" target="_blank">D-2</a></li>
-          <li><a href="./D-type/D-3/index.html" target="_blank">D-3</a></li>
-          <li><a href="" target="_blank">D-4</a></li>
-        </ul>
-      </section>
-
-      <section class="sec4">
-        <h2>E type</h2>
-        <ul class="type-list">
-          <li><a href="./E-type/E-1/index.html" target="_blank">E-1</a></li>
-          <li><a href="./E-type/E-2/index.html" target="_blank">E-2</a></li>
-          <li><a href="./E-type/E-3/index.html" target="_blank">E-3</a></li>
-          <li><a href="./E-type/E-4/index.html" target="_blank">E-4</a></li>
-        </ul>
-      </section>
-
-      <section class="sec5">
-        <h2>F type</h2>
-        <ul class="type-list">
-          <li><a href="./F-type/F-1/index.html" target="_blank">F-1</a></li>
-          <li><a href="./F-type/F-2/index.html" target="_blank">F-2</a></li>
-          <li><a href="./F-type/F-3/index.html" target="_blank">F-3</a></li>
-          <li><a href="./F-type/F-4/index.html" target="_blank">F-4</a></li>
-        </ul>
-      </section>
-    </article>
-
-    <script>
-      const aEl = document.querySelectorAll('.type-list li a');
-
-      aEl.forEach((a) => {
-        if (!a.getAttribute('href')) {
-          a.style.backgroundColor = '#555';
-        }
-      });
-    </script>
-  </body>
 </html>
