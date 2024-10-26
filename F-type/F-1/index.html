@@ -1,194 +1,221 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>주식회사 기능건설</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-  <header id="header">
-    <div class="inner">
-      <nav>
-        <h1 class="logo"><a href="#">LOGO</a></h1>
-        <ul class="gnb">
-          <li>
-            <a href="#">회사소개</a>
-            <ul class="submenu">
-              <li><a href="#">기업정보</a></li>
-              <li><a href="#">CEO인사말</a></li>
-              <li><a href="#">연혁</a></li>
-              <li><a href="#">조직도</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">지속가능경영</a>
-            <ul class="submenu">
-              <li><a href="#">윤리경영</a></li>
-              <li><a href="#">품질경영</a></li>
-              <li><a href="#">안전경영</a></li>
-              <li><a href="#">환경경영</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">사업분야</a>
-            <ul class="submenu">
-              <li><a href="#">건축사업</a></li>
-              <li><a href="#">토목사업</a></li>
-              <li><a href="#">주택사업</a></li>
-              <li><a href="#">환경/플랜트</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">홍보센터</a>
-            <ul class="submenu">
-              <li><a href="#">뉴스</a></li>
-              <li><a href="#">분양뉴스</a></li>
-              <li><a href="#">CI/BI</a></li>
-            </ul>
-          </li>
+  <!-- header+main+footer -->
+  <header>
+    <!-- h1.logo>a>img -->
+    <h1 class="logo"><a href="#"><img src="./images/logo.png" alt="주식회사 기능건설"></a></h1>
+    
+    <!-- ul.gnb>li*4>a+ul.submenu>li*4>a -->
+    <ul class="gnb">
+      <li>
+        <a href="#">회사소개</a>
+        <ul class="submenu">
+          <li><a href="#">기업정보</a></li>
+          <li><a href="#">CEO인사말</a></li>
+          <li><a href="#">연혁</a></li>
+          <li><a href="#">조직도</a></li>
         </ul>
-      </nav>
-    </div>
+      </li>
+      <li>
+        <a href="#">지속가능경영</a>
+        <ul class="submenu">
+          <li><a href="#">윤리경영</a></li>
+          <li><a href="#">품질경영</a></li>
+          <li><a href="#">안전경영</a></li>
+          <li><a href="#">환경경영</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">사업분야</a>
+        <ul class="submenu">
+          <li><a href="#">건축사업</a></li>
+          <li><a href="#">토목사업</a></li>
+          <li><a href="#">주택사업</a></li>
+          <li><a href="#">환경/플랜트</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">홍보센터</a>
+        <ul class="submenu">
+          <li><a href="#">뉴스</a></li>
+          <li><a href="#">분양뉴스</a></li>
+          <li><a href="#">CI/BI</a></li>
+        </ul>
+      </li>
+    </ul>
   </header>
-  <main id="main">
-    <div class="visual-slider">
-      <div class="slider-wrap">
-        <div class="slide">
-          <img src="" alt="" />
-          <p>slide 1</p>
+
+  <main>
+    <!-- .slider>.slide_wrap>.slide_item*3>img+p -->
+    <div class="slider">
+      <div class="slide_wrap">
+        <div class="slide_item">
+          <img src="./images/slide-pic1.jpg" alt="기능건설과 함께 믿음의 건설을 경험하세요.">
+          <p>기능건설과 함께 믿음의 건설을 경험하세요.</p>
         </div>
-        <div class="slide">
-          <img src="" alt="" />
-          <p>slide 2</p>
+        <div class="slide_item">
+          <img src="./images/slide-pic2.jpg" alt="기능건설의 최고 품질 프로젝트를 만나보세요.">
+          <p>기능건설의 최고 품질 프로젝트를 만나보세요.</p>
         </div>
-        <div class="slide">
-          <img src="" alt="" />
-          <p>slide 3</p>
+        <div class="slide_item">
+          <img src="./images/slide-pic3.jpg" alt="기능건설과 함께 미래를 건설하세요.">
+          <p>기능건설과 함께 미래를 건설하세요.</p>
         </div>
       </div>
     </div>
-    <div class="links">
-      <div class="inner">
-        <ul class="link-list">
-          <li><a href="#"><img src="" alt="">
-              <p>link1</p>
-            </a></li>
-          <li><a href="#"><img src="" alt="">
-              <p>link2</p>
-            </a></li>
-          <li><a href="#"><img src="" alt="">
-              <p>link3</p>
-            </a></li>
-          <li><a href="#"><img src="" alt="">
-              <p>link4</p>
-            </a></li>
-          <li><a href="#"><img src="" alt="">
-              <p>link5</p>
-            </a></li>
-        </ul>
-      </div>
+
+    <div class="link">
+      <!-- ul.link_list>li*5>a>img+p -->
+      <ul class="link_list">
+        <li>
+          <a href="#">
+            <img src="./images/icon1.png" alt="회사 소개">
+            <p>회사 소개</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/icon2.png" alt="사업 분야">
+            <p>사업 분야</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/icon3.png" alt="프로젝트">
+            <p>프로젝트</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/icon4.png" alt="홍보 센터">
+            <p>홍보 센터</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/icon5.png" alt="고객 지원">
+            <p>고객 지원</p>
+          </a>
+        </li>
+      </ul>
     </div>
+
     <div class="banner">
-      <div class="inner">
-        <a href="#"><img src="./images/banner.png" alt="배너 내용" /></a>
-      </div>
+      <a href="#"><img src="./images/banner.jpg" alt="배너의 제목 정도 적어 넣으세요"></a>
     </div>
+
     <div class="board">
-      <div class="inner">
-        <div class="tab">
-          <div class="tab-menu">
-            <a href="#" class="on">공지사항</a>
-            <a href="#">갤러리</a>
+      <!-- .tab>.tab_menu+.tab_con -->
+      <div class="tab">
+
+        <div class="tab_menu">
+          <a href="#" class="on">공지사항</a>
+          <a href="#">갤러리</a>
+        </div>
+
+        <div class="tab_con">
+          <div class="tab_con_item">
+            <!-- 공지사항 -->
+            <!-- ul.notice_list>li*4>a>p*2 -->
+            <ul class="notice_list">
+              <li>
+                <a href="https://www.google.com" class="open_popup">
+                  <p>신규 프로젝트 발표</p>
+                  <p>2024. 07. 19</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>안전 교육 일정</p>
+                  <p>2024. 07. 19</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>직원 채용 공고</p>
+                  <p>2024. 07. 19</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>현장 소식</p>
+                  <p>2024. 07. 19</p>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="tab-con">
-            <div class="tab-con-item">
-              <ul class="notice">
-                <li>
-                  <p>
-                    <a href="#" class="show_popup">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </a>
-                  </p>
-                  <strong>2024. 06. 26</strong>
-                </li>
-                <li>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur
-                  </p>
-                  <strong>2024. 06. 26</strong>
-                </li>
-                <li>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur
-                  </p>
-                  <strong>2024. 06. 26</strong>
-                </li>
-                <li>
-                  <p>
-                    Lorem ipsum dolor sit, amet consect
-                  </p>
-                  <strong>2024. 06. 26</strong>
-                </li>
-              </ul>
-            </div>
-            <div class="tab-con-item">
-              <ul class="gallery">
-                <li>
-                  <a href="#"><img src="" alt="" />
-                    <p>사진1</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#"><img src="" alt="" />
-                    <p>사진2</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#"><img src="" alt="" />
-                    <p>사진3</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
+
+          <div class="tab_con_item">
+            <!-- 갤러리 -->
+            <!-- ul.gallery_list>li*3>a>img+p -->
+            <ul class="gallery_list">
+              <li>
+                <a href="#">
+                  <img src="./images/gallery-pic1.jpg" alt="건설 현장">
+                  <p>건설 현장</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/gallery-pic2.jpg" alt="완공된 건물">
+                  <p>완공된 건물</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/gallery-pic3.jpg" alt="직원 교육">
+                  <p>직원 교육</p>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
+
       </div>
     </div>
   </main>
-  <footer id="footer">
-    <div class="inner">
-      <div class="foot-logo"><a href="">LOGO</a></div>
-      <div class="foot-con">
-        <ul class="foot-link">
-          <li><a href="#">footer link1</a></li>
-          <li><a href="#">footer link2</a></li>
-          <li><a href="#">footer link3</a></li>
-          <li><a href="#">footer link4</a></li>
-          <li><a href="#">footer link5</a></li>
-          <li><a href="#">footer link6</a></li>
-        </ul>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-          assumenda pariatur eos dicta nisi libero iure modi
-        </p>
-      </div>
+  <footer>
+    <!-- .foot_logo+.foot_con -->
+    <div class="foot_logo"><a href="#"><img src="./images/foot_logo.png" alt="주식회사 기능건설"></a></div>
+    
+    <div class="foot_con">
+      <!-- ul.foot_menu>li*6>a -->
+      <ul class="foot_menu">
+        <li><a href="#">회사 소개</a></li>
+        <li><a href="#">이용 약관</a></li>
+        <li><a href="#">개인정보 처리방침</a></li>
+        <li><a href="#">고객 지원</a></li>
+        <li><a href="#">채용 정보</a></li>
+        <li><a href="#">문의하기</a></li>
+      </ul>
+
+      <p class="copyright">COPYRIGHT © 2024 기능건설</p>
     </div>
   </footer>
 
+  <!-- .popup>h2+p+button.btn_close{닫기} -->
   <div class="popup">
-    <h2>타이틀</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nostrum explicabo veniam mollitia odit
-      quibusdam, animi enim voluptatibus perspiciatis fugiat vero atque nam, voluptatum reprehenderit pariatur!
-      Voluptatem hic maxime adipisci.</p>
+    <h2>신규 프로젝트 발표</h2>
+    <p>
+      주식회사 기능건설에서는 새로운 프로젝트를 발표하게 되어 매우 기쁘게 생각합니다. 
+이번 프로젝트는 기능건설의 혁신적인 건축 기술과 디자인을 바탕으로, 서울 강남의 랜드마크가 될 것입니다. 주거 단지는 최신 설비와 편의시설을 갖춘 고급 아파트로 구성되며, 상업 공간은 다양한 쇼핑몰과 레스토랑, 카페 등이 들어설 예정입니다. 또한, 문화 공간으로는 갤러리, 공연장, 도서관 등이 포함되어 지역 주민들과 방문객들에게 풍부한 문화 경험을 제공할 것입니다.
+    </p>
     <button class="btn_close">닫기</button>
   </div>
 
-  <script src="./script/jquery-1.12.3.js"></script>
+  <!-- 이건 시험에 안 나와요 -->
+  <div class="fake_cursor"></div>
+
+  <!-- script:src -->
+  <script src="./script/jquery-3.7.1.min.js"></script>
   <script src="./script/script.js"></script>
 </body>
-
 </html>

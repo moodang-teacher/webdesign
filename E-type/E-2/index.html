@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>역사박물관</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
+  <!-- .wrap+footer -->
   <div class="wrap">
+    <!-- header+.c_wrap+.slider -->
     <header>
+      <!-- h1.logo>a>img -->
       <h1 class="logo"><a href="#"><img src="" alt="역사박물관"></a></h1>
+
+      <!-- ul.gnb>li*4>a+ul.submenu>li*4>a -->
       <ul class="gnb">
         <li>
           <a href="#">박물관 소개</a>
@@ -52,130 +55,145 @@
     </header>
 
     <div class="c_wrap">
+      <!-- .notice+.gallery+.link -->
       <div class="notice">
+        <!-- h2+ul.notice_list>li*4>a>p*2 -->
         <h2>공지사항</h2>
         <ul class="notice_list">
           <li>
             <a href="#" class="open_popup">
-              <p>새로운 전시 안내</p>
-              <p>2024. 07. 11</p>
+              <p>특별 전시 안내</p>
+              <p>2024. 07. 19</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <p>체험 학습 신청</p>
-              <p>2024. 07. 11</p>
+              <p>유물 기증 소식</p>
+              <p>2024. 07. 19</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <p>연구 발표회 일정</p>
-              <p>2024. 07. 11</p>
+              <p>교육 프로그램 안내</p>
+              <p>2024. 07. 19</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <p>회원 가입 혜택</p>
-              <p>2024. 07. 11</p>
+              <p>관람 시간 변경</p>
+              <p>2024. 07. 19</p>
             </a>
           </li>
         </ul>
       </div>
 
       <div class="gallery">
+        <!-- h2+ul.gallery_list>li*2>a>img+p -->
         <h2>갤러리</h2>
         <ul class="gallery_list">
           <li>
             <a href="#">
-              <img src="" alt="고대 유물 전시">
-              <p>고대 유물 전시</p>
+              <img src="" alt="유물 전시">
+              <p>유물 전시</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="" alt="역사적 사건들">
-              <p>역사적 사건들</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="" alt="체험 학습 현장">
-              <p>체험 학습 현장</p>
+              <img src="" alt="박물관 내부">
+              <p>박물관 내부</p>
             </a>
           </li>
         </ul>
       </div>
+
       <div class="link">
+        <!-- ul.link_list>li*4>a>img+p -->
         <ul class="link_list">
           <li>
             <a href="#">
-              <img src="" alt="LINK1">
-              <p>LINK1</p>
+              <img src="" alt="전시 안내">
+              <p>전시 안내</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="" alt="LINK2">
-              <p>LINK2</p>
+              <img src="" alt="교육 프로그램">
+              <p>교육 프로그램</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="" alt="LINK3">
-              <p>LINK3</p>
+              <img src="" alt="이용 안내">
+              <p>이용 안내</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="" alt="LINK4">
-              <p>LINK4</p>
+              <img src="" alt="기념품 샵">
+              <p>기념품 샵</p>
             </a>
           </li>
         </ul>
-
       </div>
     </div>
 
     <div class="slider">
+      <!-- .slide_wrap>.slide_item*3>img+p -->
       <div class="slide_wrap">
+
         <div class="slide_item">
-          <img src="" alt="지역 역사 전시회">
-          <p>지역 역사 전시회</p>
+          <img src="./images/slide-pic1.jpg" alt="역사박물관에서 역사의 기록을 만나보세요.">
+          <p>역사박물관에서 역사의 기록을 만나보세요.</p>
         </div>
+
         <div class="slide_item">
-          <img src="" alt="체험 학습 프로그램">
-          <p>체험 학습 프로그램</p>
+          <img src="./images/slide-pic2.jpg" alt="역사박물관의 다양한 유물 전시를 감상하세요.">
+          <p>역사박물관의 다양한 유물 전시를 감상하세요.</p>
         </div>
+
         <div class="slide_item">
-          <img src="" alt="연구 및 행사 안내">
-          <p>연구 및 행사 안내</p>
+          <img src="./images/slide-pic3.jpg" alt="역사박물관에서 과거와의 만남을 경험하세요.">
+          <p>역사박물관에서 과거와의 만남을 경험하세요.</p>
         </div>
+
       </div>
     </div>
   </div>
+
   <footer>
-    <div class="foot_logo"><a href="#"><img src="" alt="역사박물관"></a></div>
-    <p class="copyright">Copyright © 2023 역사박물관. All Rights Reserved.</p>
+    <!-- .foot_logo+p.copyright+.family -->
+    <div class="foot_logo">
+      <a href="#"><img src="" alt="역사박물관"></a>
+    </div>
+
+    <p class="copyright">
+      COPYRIGHT © 2024 역사박물관
+    </p>
+
     <div class="family">
+      <!-- select>opt*3 -->
       <select>
-        <option value="">패밀리사이트1</option>
-        <option value="">패밀리사이트2</option>
-        <option value="">패밀리사이트3</option>
-        <option value="">패밀리사이트4</option>
+        <option value="#">서울역사박물관</option>
+        <option value="#">한성백제박물관</option>
+        <option value="#">동북아역사재단</option>
       </select>
     </div>
+
   </footer>
 
+  <!-- 팝업창 -->
+  <!-- .dim+.popup>h2+p+button.btn_close{닫기} -->
   <div class="dim"></div>
   <div class="popup">
-    <h2>새로운 전시 안내</h2>
-    <p>역사박물관에서 새로운 전시가 시작됩니다! 이번 전시는 지역의 고대 유물과 역사적 사건들을 중심으로 구성되어 있습니다. 전시 기간은 7월 20일부터 9월 30일까지이며, 매일 오전 10시부터 오후 5시까지
-      관람 가능합니다. 자세한 정보는 박물관 홈페이지에서 확인해 주세요.</p>
+    <h2>특별 전시 안내</h2>
+    <p>역사박물관에서는 특별 전시를 개최합니다. 이번 전시에서는 조선시대 유물을 중심으로 다양한 역사적 자료를 선보입니다. 조선시대의 문화와 역사를 깊이 있게 이해할 수 있는 기회로, 다양한 유물과 함께 그 시대의 생활상을 엿볼 수 있는 귀중한 자료들이 전시됩니다.
+
+      이번 전시에서는 조선시대의 도자기, 서예 작품, 의복, 무기 등 다양한 유물을 통해 그 시대의 예술과 기술, 생활 문화를 체험할 수 있습니다. 특히, 조선시대의 왕실 유물과 일반 백성들의 생활 용품을 비교해 볼 수 있는 특별한 전시 공간도 마련되어 있습니다.</p>
     <button class="btn_close">닫기</button>
   </div>
 
-  <script src="./script/jquery-1.12.3.js"></script>
+  <!-- script:src -->
+  <script src="./script/jquery-3.7.1.min.js"></script>
   <script src="./script/script.js"></script>
 </body>
-
 </html>

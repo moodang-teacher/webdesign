@@ -5,14 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>남도맛기행 축제</title>
+
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-
+  <!-- .wrap>header+.container -->
   <div class="wrap">
+
     <header>
+      <!-- h1.logo>a>img -->
       <h1 class="logo"><a href="#"><img src="" alt="남도맛기행 축제"></a></h1>
+
+      <!-- ul.gnb>li*4>a+ul.submenu>li*3>a -->
       <ul class="gnb">
         <li>
           <a href="#">협회소개</a>
@@ -50,97 +55,107 @@
     </header>
 
     <div class="container">
+      <!-- main+footer -->
       <main>
+        <!-- .slider>.slide_wrap>.slide_item*3>img+p -->
         <div class="slider">
           <div class="slide_wrap">
+
             <div class="slide_item">
-              <img src="" alt="남도의 맛, 한자리에서!">
-              <p>남도의 맛, 한자리에서!</p>
+              <img src="./images/slide1.jpg" alt="남도맛기행 축제에서 전통 음식의 맛을 체험하세요.">
+              <p>남도맛기행 축제에서 전통 음식의 맛을 체험하세요.</p>
             </div>
+
             <div class="slide_item">
-              <img src="" alt="전통과 현대의 맛 여행">
-              <p>전통과 현대의 맛 여행</p>
+              <img src="./images/slide2.jpg" alt="남도맛기행 축제에서 다양한 미식 여행을 즐기세요.">
+              <p>남도맛기행 축제에서 다양한 미식 여행을 즐기세요.</p>
             </div>
+
             <div class="slide_item">
-              <img src="" alt="남도 음식의 진수">
-              <p>남도 음식의 진수</p>
+              <img src="./images/slide3.jpg" alt="남도맛기행 축제에서 남도의 전통 음식을 만나보세요.">
+              <p>남도맛기행 축제에서 남도의 전통 음식을 만나보세요.</p>
             </div>
+
           </div>
         </div>
+
+        <!-- .c_wrap>.notice+.gallery+.banner -->
         <div class="c_wrap">
           <div class="notice">
+            <!-- h2+ul.notice_list>li*4>a>p*2 -->
             <h2>공지사항</h2>
             <ul class="notice_list">
               <li>
                 <a href="#" class="open_popup">
                   <p>축제 일정 안내</p>
-                  <p>2024. 07. 08</p>
+                  <p>2024. 07. 19</p>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <p>주차 안내</p>
-                  <p>2024. 07. 08</p>
+                  <p>대표 음식 소개</p>
+                  <p>2024. 07. 19</p>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <p>참가 신청 안내</p>
-                  <p>2024. 07. 08</p>
+                  <p>체험 프로그램 안내</p>
+                  <p>2024. 07. 19</p>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <p>안전 수칙 안내</p>
-                  <p>2024. 07. 08</p>
+                  <p>주차 및 교통 안내</p>
+                  <p>2024. 07. 19</p>
                 </a>
               </li>
             </ul>
           </div>
+
           <div class="gallery">
+            <!-- h2+ul.gallery_list>li*3>a>img -->
             <h2>갤러리</h2>
             <ul class="gallery_list">
-              <li>
-                <a href="#">
-                  <img src="" alt="갤러리1">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="" alt="갤러리2">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="" alt="갤러리3">
-                </a>
-              </li>
+              <li><a href="#"><img src="" alt="이미지1"></a></li>
+              <li><a href="#"><img src="" alt="이미지2"></a></li>
+              <li><a href="#"><img src="" alt="이미지3"></a></li>
             </ul>
           </div>
-          <div class="banner"><a href="#"><img src="" alt="배너"></a></div>
+
+          <div class="banner">
+            <a href="#"><img src="" alt="텍스트를 적당히"></a>
+          </div>
         </div>
       </main>
+
       <footer>
-        <div class="foot_logo"><a href="#"><img src="" alt="남도맛기행"></a></div>
+        <!-- .foot_logo+.foot_con -->
+        <div class="foot_logo"><a href="#"><img src="" alt="남도맛기행 축제"></a></div>
+
         <div class="foot_con">
+          <!-- ul.foot_menu>li*5>a -->
           <ul class="foot_menu">
-            <li><a href="#">foot menu1</a></li>
-            <li><a href="#">foot menu2</a></li>
-            <li><a href="#">foot menu3</a></li>
-            <li><a href="#">foot menu4</a></li>
+            <li><a href="#">이용 약관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">문의하기</a></li>
+            <li><a href="#">자주 묻는 질문</a></li>
+            <li><a href="#">사이트맵</a></li>
           </ul>
-          <div class="copyright">© 2024 Namdo Taste Journey Festival. All rights reserved.</div>
+
+          <p class="copyright">COPYRIGHT © 2024 남도맛기행 축제</p>
         </div>
       </footer>
     </div>
+
   </div>
 
+  <!-- 팝업창 -->
+  <!-- .popup>h2+p+button.btn_close{닫기} -->
   <div class="popup">
-    <h2>참가 신청 안내</h2>
-    <p>
-      남도맛기행 축제의 다양한 프로그램에 참가 신청을 받고 있습니다. 요리 체험, 전통 음식 시식, 남도 음식 강연 등 다양한 프로그램이 준비되어 있습니다. 참가를 원하시는 분들은 축제 홈페이지에서 신청서를
-      작성해 주시기 바랍니다. 신청 마감일은 8월 10일이며, 선착순으로 마감됩니다. 많은 참여 부탁드립니다!
-    </p>
+    <h2>남도맛기행 축제 일정 안내</h2>
+    <p>남도맛기행 축제는 9월 1일부터 9월 7일까지 진행됩니다. 이번 축제에서는 남도의 다양한 전통 음식을 맛보고 체험할 수 있는 특별한 기회를 제공합니다. 남도의 풍부한 식문화를 직접 경험하며, 다양한 음식
+      체험 프로그램에 참여할 수 있습니다. 가족, 친구, 연인과 함께 남도의 맛을 즐기며, 즐거운 시간을 보내세요. 많은 참여 부탁드리며, 자세한 내용은 남도맛기행 축제 공식 홈페이지를 참고해 주세요. 이번
+      가을, 남도에서 맛있는 추억을 만들어 보세요!</p>
     <button class="btn_close">닫기</button>
   </div>
 
