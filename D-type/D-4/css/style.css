@@ -120,7 +120,7 @@ header {
 	left: 200px;
 	background: var(--main);
 	width: calc(100% - 200px);
-	height: 188px;
+	height: 180px;
 	z-index: 9;
 	display: none;
 }
