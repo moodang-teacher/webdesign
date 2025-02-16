@@ -10,12 +10,12 @@ $('.gnb > li').on('mouseleave', function () {
 setInterval(function () {
 	$('.slide_wrap').animate(
 		{
-			'margin-left': '-100%',
+			'margin-top': -$('.slide_wrap').height(),
 		},
 		1000,
 		function () {
+			$('.slide_wrap').css('margin-top', '0');
 			$('.slide_item:first').appendTo('.slide_wrap');
-			$('.slide_wrap').css('margin-left', '0');
 		}
 	);
 }, 3000);
