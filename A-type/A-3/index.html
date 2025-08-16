@@ -1,195 +1,165 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>강원천문대</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>강원천문대</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!-- header+main+footer -->
+<header>
+  <!-- h1.logo>a>img -->
+  <h1 class="logo"><a href="#"><img src="./images/logo.png" alt="강원천문대"></a></h1>
 
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <!-- header+main+footer -->
-    <header>
-      <!-- h1.logo+ul.gnb>li*3>a+ul.submenu>li*4>a -->
-      <h1 class="logo">
-        <a href="#"><img src="./images/logo.png" alt="강원천문대" /></a>
-      </h1>
-      <ul class="gnb">
-        <li>
-          <a href="#">강원천문대</a>
-          <ul class="submenu">
-            <li><a href="#">천문대소개</a></li>
-            <li><a href="#">인사말</a></li>
-            <li><a href="#">오시는길</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">이용안내</a>
-          <ul class="submenu">
-            <li><a href="#">프로그램</a></li>
-            <li><a href="#">관람시간표</a></li>
-            <li><a href="#">이달의 별자리</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">천문대예약</a>
-          <ul class="submenu">
-            <li><a href="#">예약하기</a></li>
-            <li><a href="#">예약확인</a></li>
-            <li><a href="#">예약취소</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">커뮤니티</a>
-          <ul class="submenu">
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">방문후기</a></li>
-            <li><a href="#">자유게시판</a></li>
-          </ul>
-        </li>
+  <!-- ul.gnb>li*4>a+ul.submenu>li*3>a -->
+  <ul class="gnb">
+    <li>
+      <a href="#">강원천문대</a>
+      <ul class="submenu">
+        <li><a href="#">천문대소개</a></li>
+        <li><a href="#">인사말</a></li>
+        <li><a href="#">오시는길</a></li>
       </ul>
-    </header>
-    <main>
-      <!-- .slider+.c_wrap -->
-      <div class="slider">
-        <!-- .slide_wrap>.slide_item*3>img+p -->
-        <div class="slide_wrap">
-          <div class="slide_item">
-            <img
-              src="./images/slide1.png"
-              alt="강원천문대에서 밤하늘의 신비를 직접 체험하세요."
-            />
-            <p>GANGWON 천문대에서 밤하늘의 신비를 직접 체험하세요.</p>
-          </div>
-          <div class="slide_item">
-            <img
-              src="./images/slide2.png"
-              alt="우주의 경이로움을 강원천문대에서 만나보세요."
-            />
-            <p>우주의 경이로움을 강원천문대에서 만나보세요.</p>
-          </div>
-          <div class="slide_item">
-            <img
-              src="./images/slide3.png"
-              alt="강원천문대의 최신 관측 프로그램에 참여하세요."
-            />
-            <p>강원천문대의 최신 관측 프로그램에 참여하세요.</p>
-          </div>
-        </div>
-      </div>
-      <div class="c_wrap">
-        <!-- .board+.banner+.link -->
-        <div class="board">
-          <!-- .tab>.tab_menu+.tab_con -->
-          <div class="tab">
-            <div class="tab_menu">
-              <a href="#" class="on">공지사항</a>
-              <a href="#">갤러리</a>
-            </div>
+    </li>
+    <li>
+      <a href="#">이용안내</a>
+      <ul class="submenu">
+        <li><a href="#">프로그램</a></li>
+        <li><a href="#">관람시간표</a></li>
+        <li><a href="#">이달의 별자리</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">천문대예약</a>
+      <ul class="submenu">
+        <li><a href="#">예약하기</a></li>
+        <li><a href="#">예약확인</a></li>
+        <li><a href="#">예약취소</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">커뮤니티</a>
+      <ul class="submenu">
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">방문후기</a></li>
+        <li><a href="#">자유게시판</a></li>
+      </ul>
+    </li>
+  </ul>
+</header>
 
-            <div class="tab_con">
-              <div class="tab_con_item">
-                <!-- 공지사항 -->
-                <!-- ul.notice_list>li*4>a>p*2 -->
-                <ul class="notice_list">
-                  <li>
-                    <a href="#" class="open_popup">
-                      <p>여름방학 특별 이벤트</p>
-                      <p>2024. 07. 19</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <p>관측 장비 점검</p>
-                      <p>2024. 07. 19</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <p>천문대 견학 신청</p>
-                      <p>2024. 07. 19</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <p>별자리 강연 일정</p>
-                      <p>2024. 07. 19</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab_con_item">
-                <!-- 갤러리 -->
-                <!-- ul.gallery_list>li*3>a>img -->
-                <ul class="gallery_list">
-                  <li>
-                    <a href="#"
-                      ><img src="./images/gallery1.png" alt="이미지1"
-                    /></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><img src="./images/gallery2.png" alt="이미지2"
-                    /></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><img src="./images/gallery3.png" alt="이미지3"
-                    /></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+<main>
+  <!-- .slider>.slide_wrap>.slide_item*3>img+p -->
+  <div class="slider">
+    <div class="slide_wrap">
+      <div class="slide_item">
+        <img src="./images/slide1.png" alt="강원천문대에서 밤하늘의 신비를 직접 체험하세요.">
+        <p>강원천문대에서 밤하늘의 신비를 직접 체험하세요.</p>
+      </div>
+      <div class="slide_item">
+        <img src="./images/slide2.png" alt="우주의 경이로움을 강원천문대에서 만나보세요.">
+        <p>우주의 경이로움을 강원천문대에서 만나보세요.</p>
+      </div>
+      <div class="slide_item">
+        <img src="./images/slide3.png" alt="강원천문대의 최신 관측 프로그램에 참여하세요.">
+        <p>강원천문대의 최신 관측 프로그램에 참여하세요.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- .c_wrap>.board+.banner+.link -->
+  <div class="c_wrap">
+    <div class="board">
+      <!-- .tab>.tab_menu+.tab_con -->
+      <div class="tab">
+        <div class="tab_menu">
+          <a href="#" class="on">공지사항</a>
+          <a href="#">갤러리</a>
         </div>
 
-        <div class="banner">
-          <a href="#"
-            ><img
-              src="./images/banner.png"
-              alt="밤하늘의 신비를 직접 체험하세요."
-          /></a>
+        <div class="tab_con">
+          <!-- .tab_con_item*2 -->
+          <div class="tab_con_item">
+            <!-- 공지사항 -->
+            <!-- ul.notice_list>li*4>a>p*2 -->
+            <ul class="notice_list">
+              <li>
+                <a href="#" class="open_popup">
+                  <p>여름방학 특별 이벤트</p>
+                  <p>2024. 07. 19</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>관측 장비 점검</p>
+                  <p>2024. 07. 19</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>천문대 견학 신청</p>
+                  <p>2024. 07. 19</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>별자리 강연 일정</p>
+                  <p>2024. 07. 19</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab_con_item">
+            <!-- 갤러리 -->
+            <!-- ul.gallery_list>li*3>a>img -->
+            <ul class="gallery_list">
+              <li><a href="#"><img src="./images/gallery1.png" alt="이미지1"></a></li>
+              <li><a href="#"><img src="./images/gallery2.png" alt="이미지2"></a></li>
+              <li><a href="#"><img src="./images/gallery3.png" alt="이미지3"></a></li>
+            </ul>
+          </div>
         </div>
-        <div class="link">
-          <a href="#"><img src="./images/link.png" alt="바로가기" /></a>
-        </div>
       </div>
-    </main>
-    <footer>
-      <!-- .foot_logo+.foot_con -->
-      <div class="foot_logo">
-        <a href="#"><img src="./images/foot_logo.png" alt="강원천문대" /></a>
-      </div>
-      <div class="foot_con">
-        <!-- ul.foot_menu+p.copyright -->
-        <ul class="foot_menu">
-          <li><a href="#">이용약관</a></li>
-          <li><a href="#">개인정보 처리방침</a></li>
-          <li><a href="#">문의하기</a></li>
-          <li><a href="#">사이트맵</a></li>
-        </ul>
-        <p class="copyright">COPYRIGHT © 2024 강원천문대</p>
-      </div>
-    </footer>
-
-    <!-- .popup>h2+p+button.btn_close{닫기} -->
-    <div class="popup">
-      <h2>여름방학 특별 이벤트</h2>
-      <p>
-        여름방학을 맞아 강원천문대에서는 특별 이벤트를 진행합니다! 이번 여름방학
-        동안 별자리 관측과 함께 다양한 체험 프로그램이 마련되어 있어 가족,
-        친구들과 함께 즐거운 시간을 보낼 수 있습니다. 천문대 전문가들과 함께하는
-        별자리 관측 시간에는 별과 행성에 대한 흥미로운 이야기를 들을 수 있으며,
-        망원경을 통해 직접 별을 관찰하는 특별한 경험을 할 수 있습니다. 또한,
-        천문학 관련 워크숍과 체험 활동도 준비되어 있어 아이들과 어른 모두에게
-        유익한 시간이 될 것입니다. 이번 이벤트는 사전 예약이 필수이므로,
-        강원천문대 홈페이지에서 예약을 완료해 주세요. 많은 참여 부탁드리며, 이번
-        여름방학을 특별하게 만들어 보세요!
-      </p>
-      <button class="btn_close">닫기</button>
     </div>
 
-    <script src="./script/jquery-3.7.1.min.js"></script>
-    <script src="./script/script.js"></script>
-  </body>
+    <div class="banner">
+      <a href="#"><img src="./images/banner.png" alt="별빛 가득한 체험, 강원천문대에서 만나는 우주 이야기"></a>
+    </div>
+
+    <div class="link">
+      <a href="#"><img src="./images/link.png" alt="관람 프로그램 예약하기"></a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <!-- .foot_logo>a>img -->
+  <div class="foot_logo"><a href="#"><img src="./images/foot-logo.png" alt="강원천문대"></a></div>
+
+  <!-- .foot_con -->
+  <div class="foot_con">
+    <!-- ul.foot_menu>li*4>a -->
+    <ul class="foot_menu">
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#">개인정보 처리방침</a></li>
+      <li><a href="#">문의하기</a></li>
+      <li><a href="#">사이트맵</a></li>
+    </ul>
+
+    <p class="copyright">COPYRIGHT © 2024 강원천문대</p>
+  </div>
+</footer>
+
+<!-- 팝업 -->
+<!-- .popup>h2+p+button.btn_close{닫기} -->
+<div class="popup">
+  <h2>여름방학 특별 이벤트</h2>
+  <p>여름방학을 맞아 강원천문대에서는 특별 이벤트를 진행합니다! 이번 여름방학 동안 별자리 관측과 함께 다양한 체험 프로그램이 마련되어 있어 가족, 친구들과 함께 즐거운 시간을 보낼 수 있습니다. 천문대 전문가들과 함께하는 별자리 관측 시간에는 별과 행성에 대한 흥미로운 이야기를 들을 수 있으며, 망원경을 통해 직접 별을 관찰하는 특별한 경험을 할 수 있습니다. 또한, 천문학 관련 워크숍과 체험 활동도 준비되어 있어 아이들과 어른 모두에게 유익한 시간이 될 것입니다. 이번 이벤트는 사전 예약이 필수이므로, 강원천문대 홈페이지에서 예약을 완료해 주세요. 많은 참여 부탁드리며, 이번 여름방학을 특별하게 만들어 보세요!</p>
+  <button class="btn_close">닫기</button>
+</div>
+
+<script src="./script/jquery-3.7.1.min.js"></script>
+<script src="./script/script.js"></script>
+</body>
 </html>
