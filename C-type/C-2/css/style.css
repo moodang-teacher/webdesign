@@ -1,39 +1,40 @@
-@charset 'utf-8';
+@charset "UTF-8";
 
 * {
+  /* m0+p0+bxbb */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-ul,
-ol,
-li {
-  list-style: none;
+ul,ol,li {
+  list-style: none; /* lisn */
 }
 
 img {
   vertical-align: top; /* vat */
+  /* w100p+h100p */
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* ob */
 }
 
 :root {
-  --main: #ff7eac;
-  --main_light: #ffebf2;
-  --main_dark: #ff2873;
+  --main: rgb(255, 100, 126);
+  --main_light: rgb(255, 215, 222);
+  --main_dark: rgb(125, 6, 26);
   --sub: #222;
   --bg: #fff;
   --bg2: #f5f5f5;
   --text: #333;
-  --line: rgba(0, 0, 0, 0.4);
+  --line: rgba(0,0,0,0.4);
 }
 
 a {
-  text-decoration: none;
-  color: #000;
+  text-decoration: none; /* tdn */
+  color: inherit;
 }
+
 a:hover {
   text-decoration: none;
   color: var(--main);
@@ -45,149 +46,162 @@ body {
 }
 
 .wrap {
+  /* w1000+h650+bg */
   width: 1000px;
-  /* border: 1px solid #000; */
-  display: flex;
+  height: 650px;
+  /* background: yellow; */
+
+  display: flex; /* df */
 }
 
 header {
+  /* w200+h100p+bg */
   width: 200px;
+  height: 100%;
   background: var(--bg2);
-  padding-top: 30px;
+  padding-top: 30px; /* pt30 */
 }
 
 .logo {
+  /* w200+h40+bd */
   width: 200px;
   height: 40px;
   /* border: 1px solid #000; */
 }
 
 .gnb {
-  margin-top: 20px;
+  margin-top: 30px; /* mt30 */
 }
 
 .gnb > li > a {
+  /* db+p10+bg#000+bd+fwb+c#fff */
   display: block;
-  padding: 12px;
+  padding: 10px;
   background: var(--main);
+  border: 1px solid var(--line);
   font-weight: bold;
   color: #fff;
-  border: 1px solid var(--line);
 }
 .gnb > li > a:hover {
   background: var(--main_dark);
-  transition: 0.4s; /* trs.4s */
 }
 
 .submenu {
-  display: none;
+  display: none; /* dn: 스크립트 작업을 위한 준비 */
 }
 
 .submenu li a {
   display: block;
-  padding: 12px;
+  padding: 10px;
   background: #fff;
-  border-bottom: 1px solid var(--line);
+  border: 1px solid var(--line);  
 }
 .submenu li a:hover {
   background: var(--main_light);
 }
 
 .container {
-  /* width: 800px; */
-  flex-grow: 1;
-  /* background: yellow; */
+  width: 800px;
+  height: 100%;
+  /* background: pink; */
 }
 
 .slider {
+  /* h350+bg */
   height: 350px;
   background: skyblue;
 }
 
 .slide_wrap {
+  /* w100p+h100p+bd */
   width: 100%;
   height: 100%;
-  /* border: 2px solid #f00; */
+  /* border: 3px solid #f00; */
 
-  position: relative;
+  position: relative; /* posr: 절대배치된 .slide_item의 기준 */
 }
 
 .slide_item {
+  /* w100p+h100p+bd */
   width: 100%;
   height: 100%;
   /* border: 1px solid #000; */
 
-  position: absolute;
+  position: relative; /* posr */
+
+  /* posa+t0+l0 */
+  position: absolute; /* position: static(기본값)만 아니면 기준 역할 가능 */
   top: 0;
   left: 0;
 }
 
 .slide_item p {
+  /* p40+bdrs30+bg+fwb+fz30+c#fff+op.7 */
+  padding: 40px;
+  border-radius: 30px;
+  background: var(--main_dark);
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  opacity: 0.7;
+
   /* posa+t50p+l50p+trft */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  /* p40+bdrs50+bg+fz20+c#fff+op.7 */
-  padding: 40px;
-  border-radius: 50px;
-  background: var(--main_dark);
-  font-size: 24px;
-  color: #fff;
-  opacity: 0.7;
 }
 
 .c_wrap {
+  /* h200+bg */
   height: 200px;
+  /* background: green; */
   display: flex;
 }
-.notice {
-  width: 34%;
-  border-right: 1px solid var(--line);
-  padding: 10px;
-}
-.notice h2 {
-  font-size: 20px;
+
+.c_wrap h2 {
+  font-size: 20px; /* fz20 */
 }
 
-.notice_list {
-  margin-top: 15px;
+.notice {
+  width: 34%; /* w34p */
+  border-right: 1px solid var(--line); /* bdr */
+  padding: 20px;
 }
 
 .notice_list li a {
   display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--line);
-  padding: 5px;
+  justify-content: space-between; /* jcsb */
+  border-bottom: 1px solid var(--line); /* bdb */
+  padding: 6px;
+  font-size: 14px; /* fz14 */
 }
 
 .gallery {
   width: 33%;
-  padding: 10px;
-}
-
-.gallery h2 {
-  font-size: 20px;
+  padding: 20px;
 }
 
 .gallery_list {
   display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 15px;
+  justify-content: center; /* jcc */
+  gap: 5px; /* g5 */
+
+  margin-top: 15px; /* mt15 */
 }
 
 .gallery_list li img {
+  /* db+w100+h100+bd */
   display: block;
   width: 70px;
-  height: 120px;
-  /* border: 1px solid #000; */
+  height: 100px;
+  border: 1px solid var(--line);
 }
 
-.gallery_list li:hover img {
-  opacity: 0.6; /* op.6 */
-  transition: 0.4s; /* trs.4s */
+.gallery_list li img:hover {
+  /* op.6+trs.4s */
+  opacity: 0.6;
+  transition: 0.4s;
 }
 
 .link {
@@ -198,70 +212,71 @@ header {
 footer {
   height: 100px;
   background: var(--sub);
-  color: #fff;
+  color: #fff; /* c#fff */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+  justify-content: space-between; /* jcsb */
+  align-items: center; /* aic: 교차축 방향의 아이템 정렬 */
+  padding: 20px; /* p20 */
 }
 
 .sns_list {
   display: flex;
-  gap: 10px;
+  gap: 20px; /* g20 */
 }
 
 .sns_list li img {
+  /* db+w40+h40 */
   display: block;
   width: 40px;
   height: 40px;
-  /* border: 1px solid #fff; */
 }
 
 .family {
-  margin-top: 5px;
-}
-
-.family select {
-  padding: 5px;
+  margin-top: 7px;
 }
 
 .dim {
-  display: none;
+  /* posf+t0+l0+w100p+h100p+bg */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: var(--line);
+
+  display: none; /* dn: 스크립트를 위한 준비 작업 */
 }
+
 .popup {
-  display: none;
+  /* posf+t50p+l50p+trft */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  /* w600+h400+bg#fff+p40+bdrs20+bd */
+  /* w600+mih400+bg#fff+p40+bdrs30+bd */
   width: 600px;
-  height: 400px;
+  min-height: 400px;
   background: #fff;
   padding: 40px;
-  border-radius: 20px;
-  border: 2px solid #000;
+  border-radius: 30px;
+  border: 3px solid #000;
+
+  display: none; /* dn: 스크립트를 위한 준비 작업 */
 }
 
 .popup p {
-  margin-top: 30px;
+  /* mt20+lh1.5 */
+  margin-top: 20px;
   line-height: 1.5;
 }
 
 .btn_close {
-  /* mt40+mla+bdn+bg+c#fff+p10-30+bdrs5+cup */
+  /* db+m30-a+bdn+bg+c#fff+p10-30+bdrs5+cup */
   display: block;
-  margin-top: 40px;
-  margin-left: auto;
+  margin: 30px auto;
   border: none;
-  background: var(--main);
+  background: #000;
   color: #fff;
   padding: 10px 30px;
   border-radius: 5px;
