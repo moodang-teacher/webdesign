@@ -1,152 +1,211 @@
-@charset 'utf-8';
+@charset "UTF-8";
 
 * {
+  /* m0+p0+bxbb */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-ul,
-ol,
-li {
-  list-style: none;
+ul,ol,li {
+  list-style: none; /* lisn */
 }
 
 img {
-  vertical-align: top;
+  vertical-align: top; /* vat */
+  /* w100p+h100p */
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* ob */
 }
 
 :root {
-  --main: rgb(103, 96, 141);
-  --main_light: rgb(230, 225, 255);
-  --main_dark: rgb(22, 12, 79);
+  --main: rgb(0, 124, 72);
+  --main_light: rgb(223, 255, 242);
+  --main_dark: rgb(0, 57, 33);
   --sub: #222;
   --bg: #fff;
   --bg2: #f5f5f5;
   --text: #333;
-  --line: rgba(0, 0, 0, 0.4);
+  --line: rgba(0,0,0,0.4);
 }
 
 a {
-  text-decoration: none;
-  color: #000;
+  text-decoration: none; /* tdn */
+  color: inherit; /* c */
+  /* color: #000; */
 }
+
 a:hover {
   text-decoration: none;
   color: var(--main);
 }
 
 body {
-  background: var(--bg);
+  background: var(--bg); /* bg */
   color: var(--text);
 }
 
 header {
+  /* w100p+h100 */
+  width: 100%;
   height: 100px;
-  background: var(--main);
+  background: var(--bg2);
 }
 
 .inner {
-  /* w1200+h100p+m0-a */
+  /* w1200+h100p+m0-a+bg */
   width: 1200px;
   height: 100%;
   margin: 0 auto;
+  /* background: red; */
+}
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+header .inner {
+  display: flex; /* df */
+  justify-content: space-between; /* jcsb */
+  align-items: center; /* aic */
+
+  position: relative; /* posr: 절대배치되는 .gnb_bg의 기준 */
+}
+
+.logo {
+  /* w200+h40+bd */
+  width: 274px;
+  height: 70px;
+  /* border: 1px solid #000; */
 }
 
 .gnb {
+  align-self: flex-end; /* asfe: 너만 끝지점으로(교차축) */
   display: flex;
-  align-self: flex-end;
+  gap: 5px; /* g5 */
 }
 
 .gnb > li {
-  position: relative;
+  position: relative; /* posr: 절대배치되는 submenu의 기준 */
 }
 
 .gnb > li > a {
+  /* db+p12+w170+bd+bg#000+fwb+c#fff+tac */
   display: block;
   padding: 12px;
   width: 170px;
-  border: 1px solid var(--line);
-  text-align: center;
+  /* border: 1px solid var(--line); */
+  background: var(--main);
   font-weight: bold;
   color: #fff;
+  text-align: center;
 }
+
 .gnb > li > a:hover {
   background: var(--main_dark);
 }
 
 .submenu {
-  position: absolute;
-  top: 47px;
-  left: 0;
-  width: 100%;
-  /* background: yellow; */
-  z-index: 6;
-
-  padding: 15px 0;
   display: none;
+
+  /* posa+t0+l0+bg */
+  position: absolute;
+  top: 55px;
+  left: 0;
+  z-index: 5; /* z5 */
+  /* background: #000; */
+
+  width: 100%; /* w100p */
 }
 
 .submenu li a {
+  /* db+p12+tac+bd */
   display: block;
   padding: 12px;
   text-align: center;
+  /* border: 1px solid #000; */
   color: #fff;
 }
-.submenu li a:hover {
-  background: var(--main_light);
-  color: var(--main_dark);
-}
 
-header .inner {
-  position: relative;
+.submenu li a:hover {
+  background: var(--main_dark);
 }
 
 .gnb_bg {
-  background: var(--main_dark);
-  position: absolute;
-  top: 100px;
-  left: 0;
-  z-index: 5;
-  width: 100%;
-  height: 214px;
-
   display: none;
+  background: var(--main);
+
+  position: absolute; /* posa */
+  top: 100px; /* t100 */
+  left: 0; /* l0 */
+  z-index: 4; /* z4: submenu보다는 밑에 있어 */
+
+  /* w100p+h200 */
+  width: 100%;
+  height: 200px;
+}
+
+footer {
+  /* w100p+h100 */
+  width: 100%;
+  height: 100px;
+  background: var(--sub);
+  color: #fff; /* c#fff */
+}
+
+footer .inner {
+  display: flex; /* df */
+  justify-content: space-between; /* jcsb */
+  align-items: center; /* aic */
+}
+
+.foot_menu {
+  display: flex;
+  gap: 20px; /* g20 */
+}
+
+.copyright {
+  /* mt15+fz14 */
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.family select {
+  padding: 10px; /* p10 */
 }
 
 main {
+  /* w1200+m0-a+bg */
   width: 1200px;
   margin: 0 auto;
+  /* background: yellow; */
+  height: 500px;
 }
 
 .slider {
+  /* h300+bg */
   height: 300px;
   background: skyblue;
   overflow: hidden; /* oh */
 }
+
 .slide_wrap {
+  /* w100p+h100p+bd */
   width: 100%;
   height: 100%;
-  /* border: 2px solid #f00; */
+  /* border: 3px solid #f00; */
 
-  display: flex;
+  display: flex; /* df */
+
 }
+
 .slide_item {
+  /* w100p+h100p+bd */
   width: 100%;
   height: 100%;
   /* border: 1px solid #000; */
-  position: relative;
 
-  flex-shrink: 0;
-  /* flex: 1 0 auto; */
+  position: relative; /* posr: 절대배치된 p의 기준 */
+  flex-shrink: 0; /* fxsh0: 줄어들지마 */
 }
+
 .slide_item p {
   /* posa+t50p+l50p+trft */
   position: absolute;
@@ -154,150 +213,119 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  /* p40+bdrs50+bg+fz30+c#fff+op.7 */
+  /* p40+bdrs30+bg+fwb+fz30+c#fff+op.7 */
   padding: 40px;
-  border-radius: 50px;
+  border-radius: 30px;
   background: var(--main_dark);
+  font-weight: bold;
   font-size: 30px;
   color: #fff;
   opacity: 0.7;
 }
 
 .c_wrap {
+  /* h200+bg */
   height: 200px;
+  /* background: green; */
   display: flex;
+}
+
+.c_wrap h2 {
+  font-size: 20px;
 }
 
 .notice {
+  /* w34p+h100p+bg */
   width: 34%;
-  padding: 10px;
-}
-
-.notice h2 {
-  font-size: 18px;
-  color: #000;
+  height: 100%;
+  /* background: blue; */
+  padding: 20px; /* p20 */
 }
 
 .notice_list {
-  margin-top: 10px;
+  margin-top: 15px; /* mt15 */
 }
 
 .notice_list li a {
-  display: flex;
-  justify-content: space-between;
-  padding: 6px;
-  border-bottom: 1px solid var(--line);
-}
-
-/* 말줄임 표시: 시험에는 안 나와요. */
-.notice_list li a p:first-child {
-  width: 70%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  /* border: 1px solid #f00; */
+  display: flex; /* df */
+  justify-content: space-between; /* jcsb */
+  padding: 6px; /* p6 */
+  border-bottom: 1px solid var(--line); /* bdb */
+  font-size: 14px; /* fz14 */
 }
 
 .gallery {
+  /* w33p+h100p+bg */
   width: 33%;
-  padding: 10px;
+  height: 100%;
   background: var(--bg2);
-}
-
-.gallery h2 {
-  font-size: 18px;
-  color: #000;
+  padding: 20px; /* p20 */
 }
 
 .gallery_list {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 25px;
+  display: flex; /* df */
+  justify-content: center; /* jcc */
+  gap: 10px; /* g10 */
+  margin-top: 20px; /* mt20 */
 }
+
 .gallery_list li img {
+  /* db+w100+h100+bd */
   display: block;
   width: 100px;
   height: 100px;
-  border: 1px solid #000;
+  border: 1px solid var(--line);
 }
 
-/* 24개 문제 중 2개 유형에서만 나오는 조건이지만 그냥 합시다. */
-.gallery_list li:hover img {
-  opacity: 0.6; /* op.6 */
-  transition: 0.4s; /* trs.4s */
+.gallery_list li img:hover {
+  /* op.6+trs.4s */
+  opacity: 0.6;
+  transition: 0.4s;
 }
 
 .banner {
+  /* w33p+h100p+bg */
   width: 33%;
+  height: 100%;
   background: tomato;
 }
 
-footer {
-  height: 100px;
-  background: var(--sub);
-  color: #fff;
-}
-
-footer .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.foot_menu {
-  display: flex;
-}
-.foot_menu li a {
-  display: block;
-  padding: 0 20px;
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
-  color: #fff;
-}
-.foot_menu li:last-child a {
-  border: none; /* bdn */
-}
-
-.copyright {
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-.family select {
-  padding: 10px;
-}
-
 .dim {
+  display: none;
+  /* posf+t0+l0+w100p+h100p+bg */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: var(--line);
-  display: none;
 }
 
 .popup {
   display: none;
+  /* posf+t50p+l50p+trft */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  /* p40+bd+bdrs20+w600+mih400+bg#fff */
+  /* p40+bd+bdrs30+w600+mih400+bg#fff */
   padding: 40px;
-  border: 2px solid #000;
-  border-radius: 20px;
+  border: 3px solid #000;
+  border-radius: 30px;
   width: 600px;
   min-height: 400px;
   background: #fff;
 }
+
 .popup p {
-  margin-top: 30px;
+  /* mt20+lh1.5 */
+  margin-top: 20px;
   line-height: 1.5;
 }
 
 .btn_close {
+  /* db+p10-20+bg+c#fff+bdn+bdrs5+cup+m30-a */
   display: block;
   padding: 10px 20px;
   background: var(--main);
@@ -305,6 +333,5 @@ footer .inner {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 30px;
-  margin-left: auto;
+  margin: 30px auto;
 }
