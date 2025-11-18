@@ -1,65 +1,69 @@
-// GNB
-// $('.gnb > li').on('mouseenter', function () {})
-$('.gnb > li').on('mouseenter', function () {
-  $('.submenu, .gnb_bg').stop().fadeIn();
-});
+// 페이드 슬라이드
 
-$('.gnb > li').on('mouseleave', function () {
-  $('.submenu, .gnb_bg').stop().fadeOut();
-});
+// slide_item이름을 가진 요소를 선택: 인덱스를 확인
+// console.log($('.slide_item'));
 
-
-// 페이드 슬라이더
-
-// 겹쳐진 slide_item중에서 첫번째를 제외하고 다 숨기자.
-console.log( $('.slide_item') );
+// 0번째 인덱스보다 큰 요소를 숨겨라
 $('.slide_item:gt(0)').hide();
 
 // 3초에 한 번씩 실행
-// setInterval(function () {}, 3000)
+// setInterval(동작, 시간)
+// setInterval(function () {}, 3000);
 setInterval(function () {
 
-  // 첫번째 슬라이드가 페이드 아웃
+  // 첫번째 slide_item이 사라짐
   $('.slide_item:first').fadeOut();
 
-  // 첫번째 슬라이드의 바로 다음 동생을 페이드 인
+  // 바로 다음 동생이 나타남
   $('.slide_item:first').next().fadeIn();
 
-  // 첫번째 슬라이드를 막내로 만들기
+  // 첫번째는 맨 마지막 자리로 이동
   $('.slide_item:first').appendTo('.slide_wrap');
 
 }, 3000);
 
-// 팝업 띄우기
-// $('.open_popup').on('click', function () {})
-$('.open_popup').on('click', function () {
-  $('.popup').fadeIn();
-});
+// GNB
+$('.gnb > li').on('mouseenter', function () {
+  $('.submenu, .gnb_bg').show();
+})
 
-$('.btn_close').on('click', function () {
-  $('.popup').fadeOut();
-});
+$('.gnb > li').on('mouseleave', function () {
+  $('.submenu, .gnb_bg').hide();
+})
 
-// 탭메뉴
+// TAB
+console.log($('.tab_con_item'));
 
-// 갤러리 영역을 숨기고 시작 (첫번째를 남기고 나머지를 숨기기)
 $('.tab_con_item:gt(0)').hide();
 
-// 탭메뉴를 클릭했을 때
-// $('.tab_menu a').on('click', function () {})
 $('.tab_menu a').on('click', function (e) {
-  // a가 가진 기본동작 막기
+  // a의 기본동작 막기
   e.preventDefault();
 
-  // 클릭한 메뉴의 인덱스를 구해서 변수 tabIdx에 담기
-  const tabIdx = $(this).index();
-  console.log(tabIdx);
+  // 클릭한 메뉴의 인덱스 구해오기 -> 변수에 담기
+  const tabIndex = $(this).index();
 
-  // 인덱스가 같은 tab_con_item를 보이게 (일단 다 숨기고)
+  // 모두 다 숨기고
   $('.tab_con_item').hide();
-  $('.tab_con_item').eq(tabIdx).show();
 
-  // 탭메뉴 활성화 표시 (일단 on클래스를 다 없애고)
+  // 구해온 인덱스에 해당하는 .tab_con_item을 보여주기
+  $('.tab_con_item').eq(tabIndex).show();
+
+  // 모든 메뉴에서 on클래스 삭제
   $('.tab_menu a').removeClass('on');
-  $('.tab_menu a').eq(tabIdx).addClass('on');
+
+  // 클릭한 메뉴에 on클래스 부여
+  $('.tab_menu a').eq(tabIndex).addClass('on');
+})
+
+// popup
+$('.open_popup').on('click', function (e) {
+  e.preventDefault();
+
+  $('.popup').fadeIn();
+})
+
+$('.btn_close').on('click', function (e) {
+
+  $('.popup').fadeOut();
 })
