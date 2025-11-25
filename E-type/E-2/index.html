@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>역사박물관</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
   <!-- .wrap+footer -->
   <div class="wrap">
-    <!-- header+.c_wrap+.slider -->
+    <!-- header+.c_wrap+.slider>.slide_wrap>.slide_item*3>img+p -->
     <header>
       <!-- h1.logo>a>img -->
       <h1 class="logo"><a href="#"><img src="./images/logo.png" alt="역사박물관"></a></h1>
@@ -57,81 +55,80 @@
     </header>
 
     <div class="c_wrap">
-      <!-- .notice+.gallery+.link -->
+      <!-- .notice>h2+ul.notice_list>li*4>a>p*2 -->
       <div class="notice">
-        <!-- h2+ul.notice_list>li*4>a>p*2 -->
         <h2>공지사항</h2>
         <ul class="notice_list">
           <li>
-            <a href="#" class="open_popup">
+            <a href="https://www.naver.com" class="open_popup">
               <p>특별 전시 안내</p>
-              <p>2024. 07. 19</p>
+              <p>2025.11.25</p>
             </a>
           </li>
           <li>
             <a href="#">
               <p>유물 기증 소식</p>
-              <p>2024. 07. 19</p>
+              <p>2025.11.25</p>
             </a>
           </li>
           <li>
             <a href="#">
               <p>교육 프로그램 안내</p>
-              <p>2024. 07. 19</p>
+              <p>2025.11.25</p>
             </a>
           </li>
           <li>
             <a href="#">
               <p>관람 시간 변경</p>
-              <p>2024. 07. 19</p>
+              <p>2025.11.25</p>
             </a>
           </li>
         </ul>
       </div>
 
+      <!-- .gallery>h2+ul.gallery_list>li*2>a>img+p -->
       <div class="gallery">
-        <!-- h2+ul.gallery_list>li*2>a>img+p -->
         <h2>갤러리</h2>
         <ul class="gallery_list">
           <li>
             <a href="#">
-              <img src="./images/gallery_pic1.jpg" alt="유물 전시">
+              <img src="./images/gallery1.png" alt="유물 전시">
               <p>유물 전시</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/gallery_pic2.jpg" alt="박물관 내부">
+              <img src="./images/gallery2.png" alt="박물관 내부">
               <p>박물관 내부</p>
             </a>
           </li>
         </ul>
       </div>
 
+      <!-- .link>ul.link_list>li*4>a>img+p -->
       <div class="link">
-        <!-- ul.link_list>li*4>a>img+p -->
         <ul class="link_list">
           <li>
             <a href="#">
-              <img src="./images/link1.jpg" alt="전시 안내">
+              <img src="./images/link1.png" alt="전시 안내">
               <p>전시 안내</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/link2.jpg" alt="교육 프로그램">
+              <img src="./images/link2.png" alt="교육 프로그램">
               <p>교육 프로그램</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/link3.jpg" alt="이용 안내">
+              <img src="./images/link3.png" alt="이용 안내">
               <p>이용 안내</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/link4.jpg" alt="기념품 샵">
+              <img src="./images/link4.png" alt="기념품 샵">
               <p>기념품 샵</p>
             </a>
           </li>
@@ -140,24 +137,19 @@
     </div>
 
     <div class="slider">
-      <!-- .slide_wrap>.slide_item*3>img+p -->
       <div class="slide_wrap">
-
         <div class="slide_item">
-          <img src="./images/slide-pic1.jpg" alt="역사박물관에서 역사의 기록을 만나보세요.">
+          <img src="./images/slide1.png" alt="역사박물관에서 역사의 기록을 만나보세요.">
           <p>역사박물관에서 역사의 기록을 만나보세요.</p>
         </div>
-
         <div class="slide_item">
-          <img src="./images/slide-pic2.jpg" alt="역사박물관의 다양한 유물 전시를 감상하세요.">
+          <img src="./images/slide2.png" alt="역사박물관의 다양한 유물 전시를 감상하세요.">
           <p>역사박물관의 다양한 유물 전시를 감상하세요.</p>
         </div>
-
         <div class="slide_item">
-          <img src="./images/slide-pic3.jpg" alt="역사박물관에서 과거와의 만남을 경험하세요.">
+          <img src="./images/slide3.png" alt="역사박물관에서 과거와의 만남을 경험하세요.">
           <p>역사박물관에서 과거와의 만남을 경험하세요.</p>
         </div>
-
       </div>
     </div>
   </div>
@@ -180,25 +172,19 @@
         <option value="#">동북아역사재단</option>
       </select>
     </div>
-
   </footer>
 
-  <!-- 팝업창 -->
   <!-- .dim+.popup>h2+p+button.btn_close{닫기} -->
   <div class="dim"></div>
+
   <div class="popup">
     <h2>특별 전시 안내</h2>
-    <p>역사박물관에서는 특별 전시를 개최합니다. 이번 전시에서는 조선시대 유물을 중심으로 다양한 역사적 자료를 선보입니다. 조선시대의 문화와 역사를 깊이 있게 이해할 수 있는 기회로, 다양한 유물과 함께 그
-      시대의 생활상을 엿볼 수 있는 귀중한 자료들이 전시됩니다.
-
-      이번 전시에서는 조선시대의 도자기, 서예 작품, 의복, 무기 등 다양한 유물을 통해 그 시대의 예술과 기술, 생활 문화를 체험할 수 있습니다. 특히, 조선시대의 왕실 유물과 일반 백성들의 생활 용품을
-      비교해 볼 수 있는 특별한 전시 공간도 마련되어 있습니다.</p>
+    <p>역사박물관에서는 특별 전시를 개최합니다. 이번 전시에서는 조선시대 유물을 중심으로 다양한 역사적 자료를 선보입니다. 조선시대의 문화와 역사를 깊이 있게 이해할 수 있는 기회로, 다양한 유물과 함께 그 시대의 생활상을 엿볼 수 있는 귀중한 자료들이 전시됩니다.</p>
+    <p>이번 전시에서는 조선시대의 도자기, 서예 작품, 의복, 무기 등 다양한 유물을 통해 그 시대의 예술과 기술, 생활 문화를 체험할 수 있습니다. 특히, 조선시대의 왕실 유물과 일반 백성들의 생활 용품을 비교해 볼 수 있는 특별한 전시 공간도 마련되어 있습니다.</p>
     <button class="btn_close">닫기</button>
   </div>
 
-  <!-- script:src -->
   <script src="./script/jquery-3.7.1.min.js"></script>
   <script src="./script/script.js"></script>
 </body>
-
 </html>
